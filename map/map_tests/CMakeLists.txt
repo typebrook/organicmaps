@@ -23,6 +23,7 @@ omim_add_test_with_qt_event_loop(${PROJECT_NAME} ${SRC})
 
 target_link_libraries(${PROJECT_NAME}
   search_tests_support
+  platform_tests_support
   generator_tests_support
   map
 )
