@@ -907,6 +907,7 @@ void Framework::SaveViewport()
 
 void Framework::LoadViewport()
 {
+#ifndef SCENARIO_ENABLE
   m2::AnyRectD rect;
   if (settings::Get("ScreenClipRect", rect) && df::GetWorldRect().IsRectInside(rect.GetGlobalRect()))
   {
@@ -917,6 +918,7 @@ void Framework::LoadViewport()
   {
     ShowAll();
   }
+#endif  // SCENARIO_ENABLE
 }
 
 void Framework::ShowAll()
