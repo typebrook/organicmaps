@@ -1560,3 +1560,10 @@ mapswithme
 *shop|cannabis
 *shop|herbalist
 *shop|camera
+*highway|path|route
+*highway|path|named
+mapswithme
+*highway|path|surface_good
+*highway|track|route
+*highway|track|named
+*highway|track|surface_good
