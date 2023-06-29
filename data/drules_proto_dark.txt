@@ -21983,7 +21983,7 @@ cont {
     scale: 12
     lines {
       width: 2.0
-      color: 255
+      color: 32768
       dashdot {
         dd: 4.0
         dd: 2.5
@@ -21997,7 +21997,7 @@ cont {
     scale: 13
     lines {
       width: 2.0
-      color: 255
+      color: 32768
       dashdot {
         dd: 4.0
         dd: 2.5
@@ -22010,7 +22010,7 @@ cont {
     scale: 14
     lines {
       width: 2.0
-      color: 255
+      color: 32768
       dashdot {
         dd: 4.0
         dd: 2.5
@@ -22023,7 +22023,7 @@ cont {
     scale: 15
     lines {
       width: 2.0
-      color: 255
+      color: 32768
       dashdot {
         dd: 4.0
         dd: 2.5
@@ -22044,7 +22044,7 @@ cont {
     scale: 16
     lines {
       width: 2.0
-      color: 255
+      color: 32768
       dashdot {
         dd: 4.0
         dd: 2.5
@@ -22064,7 +22064,7 @@ cont {
     scale: 17
     lines {
       width: 2.0
-      color: 255
+      color: 32768
       dashdot {
         dd: 4.0
         dd: 2.5
@@ -22084,7 +22084,7 @@ cont {
     scale: 18
     lines {
       width: 3.0
-      color: 255
+      color: 32768
       dashdot {
         dd: 6.0
         dd: 3.5
@@ -22104,7 +22104,7 @@ cont {
     scale: 19
     lines {
       width: 4.0
-      color: 255
+      color: 32768
       dashdot {
         dd: 8.0
         dd: 4.5
@@ -30705,7 +30705,7 @@ cont {
     scale: 12
     lines {
       width: 2.3
-      color: 255
+      color: 32768
       dashdot {
         dd: 7.0
         dd: 3.0
@@ -30719,7 +30719,7 @@ cont {
     scale: 13
     lines {
       width: 2.3
-      color: 255
+      color: 32768
       dashdot {
         dd: 7.0
         dd: 3.0
@@ -30732,7 +30732,7 @@ cont {
     scale: 14
     lines {
       width: 2.3
-      color: 255
+      color: 32768
       dashdot {
         dd: 7.0
         dd: 3.0
@@ -30745,7 +30745,7 @@ cont {
     scale: 15
     lines {
       width: 2.3
-      color: 255
+      color: 32768
       dashdot {
         dd: 7.0
         dd: 3.0
@@ -30766,7 +30766,7 @@ cont {
     scale: 16
     lines {
       width: 2.3
-      color: 255
+      color: 32768
       dashdot {
         dd: 7.0
         dd: 3.0
@@ -30786,7 +30786,7 @@ cont {
     scale: 17
     lines {
       width: 2.5
-      color: 255
+      color: 32768
       dashdot {
         dd: 7.0
         dd: 3.0
@@ -30806,7 +30806,7 @@ cont {
     scale: 18
     lines {
       width: 3.5
-      color: 255
+      color: 32768
       dashdot {
         dd: 9.0
         dd: 3.5
@@ -30826,7 +30826,7 @@ cont {
     scale: 19
     lines {
       width: 4.5
-      color: 255
+      color: 32768
       dashdot {
         dd: 12.0
         dd: 3.5
