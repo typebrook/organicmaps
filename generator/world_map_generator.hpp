@@ -112,6 +112,12 @@ public:
     char const * arr2[] = {"boundary", "administrative", "4", "state"};
     m_typesCorrector.SetDontNormalizeType(arr2);
 
+    // Merge motorways into trunks.
+    // TODO : merge e.g. highway-trunk_link into highway-trunk?
+    char const * marr1[2] = {"highway", "motorway"},
+               * marr2[2] = {"highway", "trunk"};
+    m_typesCorrector.SetMappingTypes(marr1, marr2);
+
     if (popularPlacesFilename.empty())
       LOG(LWARNING, ("popular_places_data option not set. Popular atractions will not be added to World.mwm"));
   }
