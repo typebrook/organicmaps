@@ -10,6 +10,7 @@ import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -40,6 +41,8 @@ import app.organicmaps.util.Utils;
 import app.organicmaps.util.log.LogsManager;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -57,6 +60,11 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
   private ListPreference mTtsPrefLanguages;
   @Nullable
   private Preference mTtsLangInfo;
+  @Nullable
+  private Preference mTtsVoiceTest;
+
+  private List<String> mTtsTestStringArray;
+  private int mTestStringIndex;
 
   private PreferenceScreen mPreferenceScreen;
 
@@ -79,6 +87,8 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
           mTtsPrefLanguages.setEnabled(false);
         if (mTtsLangInfo != null)
           mTtsLangInfo.setSummary(R.string.prefs_languages_information_off);
+        if (mTtsVoiceTest != null)
+          mTtsVoiceTest.setEnabled(false);
 
         root.setSummary(R.string.off);
 
@@ -92,6 +102,8 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
       root.setSummary(R.string.on);
       if (mTtsPrefEnabled != null)
         mTtsPrefEnabled.setTitle(R.string.on);
+      if (mTtsVoiceTest != null)
+        mTtsVoiceTest.setEnabled(true);
 
       if (mCurrentLanguage != null && mCurrentLanguage.downloaded)
       {
@@ -144,7 +156,7 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
     updateTts();
   }
 
-  // Use this method only on TTS screen. Prerequisites: mTtsPrefEnabled, mTtsPrefLanguages and mTtsLangInfo are not null.
+  // Use this method only on TTS screen. Prerequisites: mTtsPrefEnabled, mTtsPrefLanguages, mTtsVoiceTest and mTtsLangInfo are not null.
   private void updateTts()
   {
     enableListeners(false);
@@ -163,6 +175,7 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
       mTtsPrefEnabled.setTitle(R.string.off);
       mTtsPrefLanguages.setEnabled(false);
       mTtsPrefLanguages.setSummary(null);
+      mTtsVoiceTest.setEnabled(false);
       mTtsLangInfo.setSummary(R.string.prefs_languages_information_off);
       root.setSummary(R.string.off);
 
@@ -174,6 +187,7 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
     mTtsPrefEnabled.setChecked(enabled);
     mTtsPrefEnabled.setSummary(null);
     mTtsPrefEnabled.setTitle(enabled ? R.string.on : R.string.off);
+    mTtsVoiceTest.setEnabled(enabled);
     mTtsLangInfo.setSummary(enabled ? R.string.prefs_languages_information
                                     : R.string.prefs_languages_information_off);
 
@@ -200,6 +214,7 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
     mTtsPrefLanguages.setSummary(available ? mCurrentLanguage.name : null);
     mTtsPrefLanguages.setValue(available ? mCurrentLanguage.internalCode : null);
     mTtsPrefEnabled.setChecked(available && TtsPlayer.isEnabled());
+    mTtsVoiceTest.setEnabled(enabled && available && TtsPlayer.isEnabled());
 
     enableListeners(true);
   }
@@ -263,6 +278,29 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
       mTtsPrefEnabled = getPreference(getString(R.string.pref_tts_enabled));
       mTtsPrefLanguages = getPreference(getString(R.string.pref_tts_language));
       mTtsLangInfo = getPreference(getString(R.string.pref_tts_info));
+      mTtsVoiceTest = getPreference(getString(R.string.pref_tts_test_voice));
+
+      // Initialize TTS test strings.
+      mTtsTestStringArray = Arrays.asList(getResources().getStringArray(R.array.app_tips));
+      Collections.shuffle(mTtsTestStringArray);
+      mTestStringIndex = 0;
+
+      if (mTtsVoiceTest != null)
+      {
+        mTtsVoiceTest.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener()
+        {
+          @Override
+          public boolean onPreferenceClick(Preference arg0) {
+            Toast.makeText(getContext(), R.string.pref_tts_playing_test_voice, Toast.LENGTH_SHORT).show();
+            TtsPlayer.INSTANCE.speak(mTtsTestStringArray.get(mTestStringIndex));
+            mTestStringIndex++;
+            if (mTestStringIndex >= mTtsTestStringArray.size())
+              mTestStringIndex = 0;
+            return true;
+          }
+        });
+      }
+
       initTtsLangInfoLink();
       updateTts();
     }

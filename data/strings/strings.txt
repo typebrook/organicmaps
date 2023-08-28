@@ -5256,6 +5256,24 @@
     zh-Hans = 语音语言
     zh-Hant = 語音語言
 
+  [pref_tts_test_voice_title]
+    comment = Settings «Route» category: «Tts Test Voice» title
+    tags = android
+    en = Test Text-To-Speech (TTS) Voice
+    es = Probar síntesis de voz
+    nl = Test stem
+    pt = Testar voz
+    pt-BR = Testar voz
+
+  [pref_tts_playing_test_voice]
+    comment = Settings «Route» category: «Playing Voice Test» pop-up message
+    tags = android
+    en = Playing voice test
+    es = Reproduciendo prueba de voz
+    nl = Test-stem wordt afgespeeld
+    pt = A reproduzir teste de voz
+    pt-BR = Reproduzindo teste de voz
+
   [pref_tts_unavailable]
     comment = Settings «Route» category: «Tts unavailable» subtitle
     tags = android
@@ -26763,3 +26781,8 @@
     comment = A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks
     tags = android
     en = %@, %@
+
+  [app_tip_00]
+    comment = Tip #00
+    tags = android
+    en = Thank you for using our community-built maps!
