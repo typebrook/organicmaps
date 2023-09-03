@@ -13,6 +13,7 @@ buildscript {
   def taskName = getGradle().getStartParameter().getTaskRequests().toString().toLowerCase()
   def isFdroid = taskName.contains('fdroid')
   def isBeta = taskName.contains('beta')
+  def isDebug = taskName.contains('debug')
 
   // Enable Google Mobile Services for all flavors except fdroid.
   def googleMobileServicesDefault = !isFdroid
@@ -23,6 +24,10 @@ buildscript {
   def googleFirebaseServicesDefault = isBeta && !isFdroid && file('google-services.json').exists()
   // Add a parameter to force Firebase.
   ext.googleFirebaseServicesEnabled = project.hasProperty('firebase') ?: googleFirebaseServicesDefault
+
+  // Enable Android Auto for all debug and beta flavors except fdroid .
+  def androidAutoEnabledDefault = (isDebug || isBeta) && !isFdroid
+  ext.androidAutoEnabled = project.hasProperty('auto') ?: androidAutoEnabledDefault
 
   dependencies {
     classpath 'com.android.tools.build:gradle:8.1.1'
@@ -81,9 +86,15 @@ dependencies {
     implementation 'com.google.firebase:firebase-crashlytics-ndk'
   }
 
-  implementation 'androidx.car.app:app:1.4.0-alpha01'
-  // Fix for app/organicmaps/util/FileUploadWorker.java:14: error: cannot access ListenableFuture
-  implementation 'com.google.guava:guava:29.0-android'
+  if (androidAutoEnabled) {
+    println('Building with Android Auto')
+    // Fix for app/organicmaps/util/FileUploadWorker.java:14: error: cannot access ListenableFuture
+    implementation 'com.google.guava:guava:29.0-android'
+    implementation 'androidx.car.app:app:1.4.0-alpha01'
+  } else {
+    println('Building without Android Auto')
+  }
+
   // This line is added as a workaround for duplicate classes error caused by some outdated dependency:
   // > A failure occurred while executing com.android.build.gradle.internal.tasks.CheckDuplicatesRunnable
   // We don't use Kotlin, but some dependencies are actively using it.
@@ -227,6 +238,9 @@ android {
        java.srcDirs += 'src/flavors/firebase-enabled'
      } else {
        java.srcDirs += 'src/flavors/firebase-disabled'
+     }
+     if (androidAutoEnabled) {
+       java.srcDirs += 'src/flavors/auto-enabled'
      }
      assets.srcDirs = ['assets']
    }
