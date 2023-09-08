@@ -38,6 +38,7 @@ namespace scales
 
   double GetEpsilonForLevel(int level);
   double GetEpsilonForSimplify(int level);
+  double GetEpsilonForHousenumbers(int level);
   bool IsGoodForLevel(int level, m2::RectD const & r);
 
   using Points = std::vector<m2::PointD>;

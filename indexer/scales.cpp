@@ -66,6 +66,11 @@ namespace scales
       return GetEpsilonImpl(level, 1.3);
   }
 
+  double GetEpsilonForHousenumbers(int level)
+  {
+    return GetEpsilonImpl(level, 22);
+  }
+
   bool IsGoodForLevel(int level, m2::RectD const & r)
   {
     ASSERT(level >= 0 && level <= GetUpperScale(), (level));
