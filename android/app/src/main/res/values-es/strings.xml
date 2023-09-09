@@ -228,6 +228,10 @@
 	<string name="pref_tts_enable_title">Instrucciones de voz</string>
 	<!-- Settings «Route» category: «Tts language» title -->
 	<string name="pref_tts_language_title">Idioma de voz</string>
+	<!-- Settings «Route» category: «Tts Test Voice» title -->
+	<string name="pref_tts_test_voice_title">Probar síntesis de voz</string>
+	<!-- Settings «Route» category: «Playing Voice Test» pop-up message -->
+	<string name="pref_tts_playing_test_voice">Reproduciendo prueba de voz</string>
 	<!-- Settings «Route» category: «Tts unavailable» subtitle -->
 	<string name="pref_tts_unavailable">No disponible</string>
 	<string name="pref_map_auto_zoom">Zoom automático</string>

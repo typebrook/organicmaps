@@ -228,6 +228,10 @@
 	<string name="pref_tts_enable_title">Gesproken instructies</string>
 	<!-- Settings «Route» category: «Tts language» title -->
 	<string name="pref_tts_language_title">Gesproken taal</string>
+	<!-- Settings «Route» category: «Tts Test Voice» title -->
+	<string name="pref_tts_test_voice_title">Test stem</string>
+	<!-- Settings «Route» category: «Playing Voice Test» pop-up message -->
+	<string name="pref_tts_playing_test_voice">Test-stem wordt afgespeeld</string>
 	<!-- Settings «Route» category: «Tts unavailable» subtitle -->
 	<string name="pref_tts_unavailable">Niet beschikbaar</string>
 	<string name="pref_map_auto_zoom">Automatisch zoomen</string>
