@@ -8,21 +8,22 @@
 #include "google/protobuf/extension_set.h"
 #include "google/protobuf/wire_format_lite.h"
 #include "google/protobuf/io/zero_copy_stream_impl_lite.h"
+#include "google/protobuf/generated_message_tctable_impl.h"
 // @@protoc_insertion_point(includes)
 
 // Must be included last.
 #include "google/protobuf/port_def.inc"
 PROTOBUF_PRAGMA_INIT_SEG
-namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = ::PROTOBUF_NAMESPACE_ID::internal;
-template <typename>
-PROTOBUF_CONSTEXPR DashDotProto::DashDotProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.dd_)*/ {}
-
-  , /*decltype(_impl_.offset_)*/ 0
-
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+namespace _pb = ::google::protobuf;
+namespace _pbi = ::google::protobuf::internal;
+namespace _fl = ::google::protobuf::internal::field_layout;
+        template <typename>
+PROTOBUF_CONSTEXPR DashDotProto::DashDotProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.dd_)*/ {},
+      /*decltype(_impl_.offset_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct DashDotProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR DashDotProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~DashDotProtoDefaultTypeInternal() {}
@@ -33,18 +34,17 @@ struct DashDotProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DashDotProtoDefaultTypeInternal _DashDotProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR PathSymProto::PathSymProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.name_)*/ {
-    &::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized {}
-  }
-
-  , /*decltype(_impl_.step_)*/ 0
-
-  , /*decltype(_impl_.offset_)*/ 0
-
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+        template <typename>
+PROTOBUF_CONSTEXPR PathSymProto::PathSymProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.name_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.step_)*/ 0,
+      /*decltype(_impl_.offset_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct PathSymProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR PathSymProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~PathSymProtoDefaultTypeInternal() {}
@@ -55,23 +55,19 @@ struct PathSymProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PathSymProtoDefaultTypeInternal _PathSymProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR LineRuleProto::LineRuleProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_._has_bits_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}
-  , /*decltype(_impl_.dashdot_)*/nullptr
-  , /*decltype(_impl_.pathsym_)*/nullptr
-  , /*decltype(_impl_.width_)*/ 0
-
-  , /*decltype(_impl_.color_)*/ 0u
-
-  , /*decltype(_impl_.priority_)*/ 0
-
-  , /*decltype(_impl_.join_)*/ 0
-
-  , /*decltype(_impl_.cap_)*/ 0
-} {}
+        template <typename>
+PROTOBUF_CONSTEXPR LineRuleProto::LineRuleProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.dashdot_)*/ nullptr,
+      /*decltype(_impl_.pathsym_)*/ nullptr,
+      /*decltype(_impl_.width_)*/ 0,
+      /*decltype(_impl_.color_)*/ 0u,
+      /*decltype(_impl_.priority_)*/ 0,
+      /*decltype(_impl_.join_)*/ 0,
+      /*decltype(_impl_.cap_)*/ 0,
+    } {}
 struct LineRuleProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR LineRuleProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~LineRuleProtoDefaultTypeInternal() {}
@@ -82,21 +78,18 @@ struct LineRuleProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LineRuleProtoDefaultTypeInternal _LineRuleProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR LineDefProto::LineDefProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_._has_bits_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}
-  , /*decltype(_impl_.dashdot_)*/nullptr
-  , /*decltype(_impl_.pathsym_)*/nullptr
-  , /*decltype(_impl_.width_)*/ 0
-
-  , /*decltype(_impl_.color_)*/ 0u
-
-  , /*decltype(_impl_.join_)*/ 0
-
-  , /*decltype(_impl_.cap_)*/ 0
-} {}
+        template <typename>
+PROTOBUF_CONSTEXPR LineDefProto::LineDefProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.dashdot_)*/ nullptr,
+      /*decltype(_impl_.pathsym_)*/ nullptr,
+      /*decltype(_impl_.width_)*/ 0,
+      /*decltype(_impl_.color_)*/ 0u,
+      /*decltype(_impl_.join_)*/ 0,
+      /*decltype(_impl_.cap_)*/ 0,
+    } {}
 struct LineDefProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR LineDefProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~LineDefProtoDefaultTypeInternal() {}
@@ -107,16 +100,15 @@ struct LineDefProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LineDefProtoDefaultTypeInternal _LineDefProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR AreaRuleProto::AreaRuleProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_._has_bits_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}
-  , /*decltype(_impl_.border_)*/nullptr
-  , /*decltype(_impl_.color_)*/ 0u
-
-  , /*decltype(_impl_.priority_)*/ 0
-} {}
+        template <typename>
+PROTOBUF_CONSTEXPR AreaRuleProto::AreaRuleProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.border_)*/ nullptr,
+      /*decltype(_impl_.color_)*/ 0u,
+      /*decltype(_impl_.priority_)*/ 0,
+    } {}
 struct AreaRuleProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR AreaRuleProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~AreaRuleProtoDefaultTypeInternal() {}
@@ -127,20 +119,18 @@ struct AreaRuleProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AreaRuleProtoDefaultTypeInternal _AreaRuleProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR SymbolRuleProto::SymbolRuleProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.name_)*/ {
-    &::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized {}
-  }
-
-  , /*decltype(_impl_.apply_for_type_)*/ 0
-
-  , /*decltype(_impl_.priority_)*/ 0
-
-  , /*decltype(_impl_.min_distance_)*/ 0
-
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+        template <typename>
+PROTOBUF_CONSTEXPR SymbolRuleProto::SymbolRuleProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.name_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.apply_for_type_)*/ 0,
+      /*decltype(_impl_.priority_)*/ 0,
+      /*decltype(_impl_.min_distance_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct SymbolRuleProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR SymbolRuleProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~SymbolRuleProtoDefaultTypeInternal() {}
@@ -151,26 +141,21 @@ struct SymbolRuleProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SymbolRuleProtoDefaultTypeInternal _SymbolRuleProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR CaptionDefProto::CaptionDefProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.text_)*/ {
-    &::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized {}
-  }
-
-  , /*decltype(_impl_.height_)*/ 0
-
-  , /*decltype(_impl_.color_)*/ 0u
-
-  , /*decltype(_impl_.stroke_color_)*/ 0u
-
-  , /*decltype(_impl_.offset_x_)*/ 0
-
-  , /*decltype(_impl_.offset_y_)*/ 0
-
-  , /*decltype(_impl_.is_optional_)*/ false
-
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+        template <typename>
+PROTOBUF_CONSTEXPR CaptionDefProto::CaptionDefProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.text_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.height_)*/ 0,
+      /*decltype(_impl_.color_)*/ 0u,
+      /*decltype(_impl_.stroke_color_)*/ 0u,
+      /*decltype(_impl_.offset_x_)*/ 0,
+      /*decltype(_impl_.offset_y_)*/ 0,
+      /*decltype(_impl_.is_optional_)*/ false,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct CaptionDefProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR CaptionDefProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~CaptionDefProtoDefaultTypeInternal() {}
@@ -181,15 +166,15 @@ struct CaptionDefProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CaptionDefProtoDefaultTypeInternal _CaptionDefProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR CaptionRuleProto::CaptionRuleProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_._has_bits_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}
-  , /*decltype(_impl_.primary_)*/nullptr
-  , /*decltype(_impl_.secondary_)*/nullptr
-  , /*decltype(_impl_.priority_)*/ 0
-} {}
+        template <typename>
+PROTOBUF_CONSTEXPR CaptionRuleProto::CaptionRuleProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.primary_)*/ nullptr,
+      /*decltype(_impl_.secondary_)*/ nullptr,
+      /*decltype(_impl_.priority_)*/ 0,
+    } {}
 struct CaptionRuleProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR CaptionRuleProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~CaptionRuleProtoDefaultTypeInternal() {}
@@ -200,18 +185,16 @@ struct CaptionRuleProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CaptionRuleProtoDefaultTypeInternal _CaptionRuleProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR CircleRuleProto::CircleRuleProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_._has_bits_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}
-  , /*decltype(_impl_.border_)*/nullptr
-  , /*decltype(_impl_.radius_)*/ 0
-
-  , /*decltype(_impl_.color_)*/ 0u
-
-  , /*decltype(_impl_.priority_)*/ 0
-} {}
+        template <typename>
+PROTOBUF_CONSTEXPR CircleRuleProto::CircleRuleProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.border_)*/ nullptr,
+      /*decltype(_impl_.radius_)*/ 0,
+      /*decltype(_impl_.color_)*/ 0u,
+      /*decltype(_impl_.priority_)*/ 0,
+    } {}
 struct CircleRuleProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR CircleRuleProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~CircleRuleProtoDefaultTypeInternal() {}
@@ -222,15 +205,15 @@ struct CircleRuleProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CircleRuleProtoDefaultTypeInternal _CircleRuleProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR PathTextRuleProto::PathTextRuleProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_._has_bits_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}
-  , /*decltype(_impl_.primary_)*/nullptr
-  , /*decltype(_impl_.secondary_)*/nullptr
-  , /*decltype(_impl_.priority_)*/ 0
-} {}
+        template <typename>
+PROTOBUF_CONSTEXPR PathTextRuleProto::PathTextRuleProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.primary_)*/ nullptr,
+      /*decltype(_impl_.secondary_)*/ nullptr,
+      /*decltype(_impl_.priority_)*/ 0,
+    } {}
 struct PathTextRuleProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR PathTextRuleProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~PathTextRuleProtoDefaultTypeInternal() {}
@@ -241,24 +224,18 @@ struct PathTextRuleProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PathTextRuleProtoDefaultTypeInternal _PathTextRuleProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR ShieldRuleProto::ShieldRuleProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.height_)*/ 0
-
-  , /*decltype(_impl_.color_)*/ 0u
-
-  , /*decltype(_impl_.stroke_color_)*/ 0u
-
-  , /*decltype(_impl_.priority_)*/ 0
-
-  , /*decltype(_impl_.min_distance_)*/ 0
-
-  , /*decltype(_impl_.text_color_)*/ 0u
-
-  , /*decltype(_impl_.text_stroke_color_)*/ 0u
-
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+        template <typename>
+PROTOBUF_CONSTEXPR ShieldRuleProto::ShieldRuleProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.height_)*/ 0,
+      /*decltype(_impl_.color_)*/ 0u,
+      /*decltype(_impl_.stroke_color_)*/ 0u,
+      /*decltype(_impl_.priority_)*/ 0,
+      /*decltype(_impl_.min_distance_)*/ 0,
+      /*decltype(_impl_.text_color_)*/ 0u,
+      /*decltype(_impl_.text_stroke_color_)*/ 0u,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct ShieldRuleProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR ShieldRuleProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~ShieldRuleProtoDefaultTypeInternal() {}
@@ -269,21 +246,21 @@ struct ShieldRuleProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ShieldRuleProtoDefaultTypeInternal _ShieldRuleProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR DrawElementProto::DrawElementProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_._has_bits_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}
-  , /*decltype(_impl_.lines_)*/{}
-  , /*decltype(_impl_.apply_if_)*/{}
-  , /*decltype(_impl_.area_)*/nullptr
-  , /*decltype(_impl_.symbol_)*/nullptr
-  , /*decltype(_impl_.caption_)*/nullptr
-  , /*decltype(_impl_.circle_)*/nullptr
-  , /*decltype(_impl_.path_text_)*/nullptr
-  , /*decltype(_impl_.shield_)*/nullptr
-  , /*decltype(_impl_.scale_)*/ 0
-} {}
+        template <typename>
+PROTOBUF_CONSTEXPR DrawElementProto::DrawElementProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.lines_)*/ {},
+      /*decltype(_impl_.apply_if_)*/ {},
+      /*decltype(_impl_.area_)*/ nullptr,
+      /*decltype(_impl_.symbol_)*/ nullptr,
+      /*decltype(_impl_.caption_)*/ nullptr,
+      /*decltype(_impl_.circle_)*/ nullptr,
+      /*decltype(_impl_.path_text_)*/ nullptr,
+      /*decltype(_impl_.shield_)*/ nullptr,
+      /*decltype(_impl_.scale_)*/ 0,
+    } {}
 struct DrawElementProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR DrawElementProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~DrawElementProtoDefaultTypeInternal() {}
@@ -294,15 +271,16 @@ struct DrawElementProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DrawElementProtoDefaultTypeInternal _DrawElementProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR ClassifElementProto::ClassifElementProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.element_)*/{}
-  , /*decltype(_impl_.name_)*/ {
-    &::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized {}
-  }
-
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+        template <typename>
+PROTOBUF_CONSTEXPR ClassifElementProto::ClassifElementProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.element_)*/ {},
+      /*decltype(_impl_.name_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct ClassifElementProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR ClassifElementProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~ClassifElementProtoDefaultTypeInternal() {}
@@ -313,20 +291,18 @@ struct ClassifElementProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ClassifElementProtoDefaultTypeInternal _ClassifElementProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR ColorElementProto::ColorElementProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.name_)*/ {
-    &::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized {}
-  }
-
-  , /*decltype(_impl_.color_)*/ 0u
-
-  , /*decltype(_impl_.x_)*/ 0
-
-  , /*decltype(_impl_.y_)*/ 0
-
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+        template <typename>
+PROTOBUF_CONSTEXPR ColorElementProto::ColorElementProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.name_)*/ {
+          &::_pbi::fixed_address_empty_string,
+          ::_pbi::ConstantInitialized{},
+      },
+      /*decltype(_impl_.color_)*/ 0u,
+      /*decltype(_impl_.x_)*/ 0,
+      /*decltype(_impl_.y_)*/ 0,
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct ColorElementProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR ColorElementProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~ColorElementProtoDefaultTypeInternal() {}
@@ -337,11 +313,12 @@ struct ColorElementProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ColorElementProtoDefaultTypeInternal _ColorElementProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR ColorsElementProto::ColorsElementProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.value_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
+        template <typename>
+PROTOBUF_CONSTEXPR ColorsElementProto::ColorsElementProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_.value_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+    } {}
 struct ColorsElementProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR ColorsElementProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~ColorsElementProtoDefaultTypeInternal() {}
@@ -352,13 +329,14 @@ struct ColorsElementProtoDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ColorsElementProtoDefaultTypeInternal _ColorsElementProto_default_instance_;
-template <typename>
-PROTOBUF_CONSTEXPR ContainerProto::ContainerProto(
-    ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_._has_bits_)*/{}
-  , /*decltype(_impl_._cached_size_)*/{}
-  , /*decltype(_impl_.cont_)*/{}
-  , /*decltype(_impl_.colors_)*/nullptr} {}
+        template <typename>
+PROTOBUF_CONSTEXPR ContainerProto::ContainerProto(::_pbi::ConstantInitialized)
+    : _impl_{
+      /*decltype(_impl_._has_bits_)*/ {},
+      /*decltype(_impl_._cached_size_)*/ {},
+      /*decltype(_impl_.cont_)*/ {},
+      /*decltype(_impl_.colors_)*/ nullptr,
+    } {}
 struct ContainerProtoDefaultTypeInternal {
   PROTOBUF_CONSTEXPR ContainerProtoDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
   ~ContainerProtoDefaultTypeInternal() {}
@@ -379,7 +357,7 @@ bool LineJoin_IsValid(int value) {
       return false;
   }
 }
-static ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<std::string>
+static ::google::protobuf::internal::ExplicitlyConstructed<std::string>
     LineJoin_strings[3] = {};
 
 static const char LineJoin_names[] = {
@@ -388,7 +366,7 @@ static const char LineJoin_names[] = {
     "ROUNDJOIN"
 };
 
-static const ::PROTOBUF_NAMESPACE_ID::internal::EnumEntry LineJoin_entries[] =
+static const ::google::protobuf::internal::EnumEntry LineJoin_entries[] =
     {
         {{&LineJoin_names[0], 9}, 1},
         {{&LineJoin_names[9], 6}, 2},
@@ -403,21 +381,21 @@ static const int LineJoin_entries_by_number[] = {
 
 const std::string& LineJoin_Name(LineJoin value) {
   static const bool kDummy =
-      ::PROTOBUF_NAMESPACE_ID::internal::InitializeEnumStrings(
+      ::google::protobuf::internal::InitializeEnumStrings(
           LineJoin_entries, LineJoin_entries_by_number,
           3, LineJoin_strings);
   (void)kDummy;
 
-  int idx = ::PROTOBUF_NAMESPACE_ID::internal::LookUpEnumName(
+  int idx = ::google::protobuf::internal::LookUpEnumName(
       LineJoin_entries, LineJoin_entries_by_number, 3,
       value);
-  return idx == -1 ? ::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString()
+  return idx == -1 ? ::google::protobuf::internal::GetEmptyString()
                    : LineJoin_strings[idx].get();
 }
 
 bool LineJoin_Parse(absl::string_view name, LineJoin* value) {
   int int_value;
-  bool success = ::PROTOBUF_NAMESPACE_ID::internal::LookUpEnumValue(
+  bool success = ::google::protobuf::internal::LookUpEnumValue(
       LineJoin_entries, 3, name, &int_value);
   if (success) {
     *value = static_cast<LineJoin>(int_value);
@@ -434,7 +412,7 @@ bool LineCap_IsValid(int value) {
       return false;
   }
 }
-static ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<std::string>
+static ::google::protobuf::internal::ExplicitlyConstructed<std::string>
     LineCap_strings[3] = {};
 
 static const char LineCap_names[] = {
@@ -443,7 +421,7 @@ static const char LineCap_names[] = {
     "SQUARECAP"
 };
 
-static const ::PROTOBUF_NAMESPACE_ID::internal::EnumEntry LineCap_entries[] =
+static const ::google::protobuf::internal::EnumEntry LineCap_entries[] =
     {
         {{&LineCap_names[0], 7}, 1},
         {{&LineCap_names[7], 8}, 0},
@@ -458,21 +436,21 @@ static const int LineCap_entries_by_number[] = {
 
 const std::string& LineCap_Name(LineCap value) {
   static const bool kDummy =
-      ::PROTOBUF_NAMESPACE_ID::internal::InitializeEnumStrings(
+      ::google::protobuf::internal::InitializeEnumStrings(
           LineCap_entries, LineCap_entries_by_number,
           3, LineCap_strings);
   (void)kDummy;
 
-  int idx = ::PROTOBUF_NAMESPACE_ID::internal::LookUpEnumName(
+  int idx = ::google::protobuf::internal::LookUpEnumName(
       LineCap_entries, LineCap_entries_by_number, 3,
       value);
-  return idx == -1 ? ::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString()
+  return idx == -1 ? ::google::protobuf::internal::GetEmptyString()
                    : LineCap_strings[idx].get();
 }
 
 bool LineCap_Parse(absl::string_view name, LineCap* value) {
   int int_value;
-  bool success = ::PROTOBUF_NAMESPACE_ID::internal::LookUpEnumValue(
+  bool success = ::google::protobuf::internal::LookUpEnumValue(
       LineCap_entries, 3, name, &int_value);
   if (success) {
     *value = static_cast<LineCap>(int_value);
@@ -485,56 +463,47 @@ class DashDotProto::_Internal {
  public:
 };
 
-DashDotProto::DashDotProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+DashDotProto::DashDotProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:DashDotProto)
 }
-DashDotProto::DashDotProto(const DashDotProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  DashDotProto* const _this = this; (void)_this;
+DashDotProto::DashDotProto(const DashDotProto& from) : ::google::protobuf::MessageLite() {
+  DashDotProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.dd_) { from._impl_.dd_ }
-
-    , decltype(_impl_.offset_) {}
-
-    , /*decltype(_impl_._cached_size_)*/{}};
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+      decltype(_impl_.dd_){from._impl_.dd_},
+      decltype(_impl_.offset_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   _this->_impl_.offset_ = from._impl_.offset_;
+
   // @@protoc_insertion_point(copy_constructor:DashDotProto)
 }
-
 inline void DashDotProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_.dd_) { arena }
-
-    , decltype(_impl_.offset_) { 0 }
-
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.dd_){arena},
+      decltype(_impl_.offset_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
 }
-
 DashDotProto::~DashDotProto() {
   // @@protoc_insertion_point(destructor:DashDotProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void DashDotProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.dd_.~RepeatedField();
 }
-
 void DashDotProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void DashDotProto::Clear() {
+PROTOBUF_NOINLINE void DashDotProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:DashDotProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -545,61 +514,55 @@ void DashDotProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* DashDotProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // repeated double dd = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedDoubleParser(_internal_mutable_dd(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::uint8_t>(tag) == 9) {
-          _internal_add_dd(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
-          ptr += sizeof(double);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // double offset = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 17)) {
-          _impl_.offset_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
-          ptr += sizeof(double);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* DashDotProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<1, 2, 0, 0, 2> DashDotProto::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    2, 8,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967292,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    2,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_DashDotProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    // double offset = 2;
+    {::_pbi::TcParser::FastF64S1,
+     {17, 63, 0, PROTOBUF_FIELD_OFFSET(DashDotProto, _impl_.offset_)}},
+    // repeated double dd = 1;
+    {::_pbi::TcParser::FastF64P1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(DashDotProto, _impl_.dd_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // repeated double dd = 1;
+    {PROTOBUF_FIELD_OFFSET(DashDotProto, _impl_.dd_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kPackedDouble)},
+    // double offset = 2;
+    {PROTOBUF_FIELD_OFFSET(DashDotProto, _impl_.offset_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kDouble)},
+  }},
+  // no aux_entries
+  {{
+  }},
+};
+
 ::uint8_t* DashDotProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:DashDotProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // repeated double dd = 1;
   if (this->_internal_dd_size() > 0) {
@@ -607,7 +570,8 @@ failure:
   }
 
   // double offset = 2;
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_offset = this->_internal_offset();
   ::uint64_t raw_offset;
   memcpy(&raw_offset, &tmp_offset, sizeof(tmp_offset));
@@ -618,8 +582,9 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:DashDotProto)
   return target;
@@ -645,9 +610,9 @@ failure:
     ;
     total_size += tag_size + data_size;
   }
-
   // double offset = 2;
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_offset = this->_internal_offset();
   ::uint64_t raw_offset;
   memcpy(&raw_offset, &tmp_offset, sizeof(tmp_offset));
@@ -656,7 +621,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -664,7 +629,7 @@ failure:
 }
 
 void DashDotProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const DashDotProto*>(
       &from));
 }
@@ -676,8 +641,9 @@ void DashDotProto::MergeFrom(const DashDotProto& from) {
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.dd_.MergeFrom(from._impl_.dd_);
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  _this->_internal_mutable_dd()->MergeFrom(from._internal_dd());
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_offset = from._internal_offset();
   ::uint64_t raw_offset;
   memcpy(&raw_offset, &tmp_offset, sizeof(tmp_offset));
@@ -694,7 +660,7 @@ void DashDotProto::CopyFrom(const DashDotProto& from) {
   MergeFrom(from);
 }
 
-bool DashDotProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool DashDotProto::IsInitialized() const {
   return true;
 }
 
@@ -702,8 +668,7 @@ void DashDotProto::InternalSwap(DashDotProto* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.dd_.InternalSwap(&other->_impl_.dd_);
-
-  swap(_impl_.offset_, other->_impl_.offset_);
+        swap(_impl_.offset_, other->_impl_.offset_);
 }
 
 std::string DashDotProto::GetTypeName() const {
@@ -716,24 +681,22 @@ class PathSymProto::_Internal {
  public:
 };
 
-PathSymProto::PathSymProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+PathSymProto::PathSymProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:PathSymProto)
 }
-PathSymProto::PathSymProto(const PathSymProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  PathSymProto* const _this = this; (void)_this;
+PathSymProto::PathSymProto(const PathSymProto& from) : ::google::protobuf::MessageLite() {
+  PathSymProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.name_) {}
-
-    , decltype(_impl_.step_) {}
-
-    , decltype(_impl_.offset_) {}
-
-    , /*decltype(_impl_._cached_size_)*/{}};
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+      decltype(_impl_.name_){},
+      decltype(_impl_.step_){},
+      decltype(_impl_.offset_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   _impl_.name_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
         _impl_.name_.Set("", GetArenaForAllocation());
@@ -744,45 +707,36 @@ PathSymProto::PathSymProto(const PathSymProto& from)
   ::memcpy(&_impl_.step_, &from._impl_.step_,
     static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.offset_) -
     reinterpret_cast<char*>(&_impl_.step_)) + sizeof(_impl_.offset_));
+
   // @@protoc_insertion_point(copy_constructor:PathSymProto)
 }
-
 inline void PathSymProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_.name_) {}
-
-    , decltype(_impl_.step_) { 0 }
-
-    , decltype(_impl_.offset_) { 0 }
-
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.name_){},
+      decltype(_impl_.step_){0},
+      decltype(_impl_.offset_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
   _impl_.name_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
         _impl_.name_.Set("", GetArenaForAllocation());
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
-
 PathSymProto::~PathSymProto() {
   // @@protoc_insertion_point(destructor:PathSymProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void PathSymProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.name_.Destroy();
 }
-
 void PathSymProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void PathSymProto::Clear() {
+PROTOBUF_NOINLINE void PathSymProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:PathSymProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -795,80 +749,77 @@ void PathSymProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* PathSymProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // string name = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
-          auto str = _internal_mutable_name();
-          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, nullptr));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // double step = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 17)) {
-          _impl_.step_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
-          ptr += sizeof(double);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // double offset = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 25)) {
-          _impl_.offset_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
-          ptr += sizeof(double);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* PathSymProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 3, 0, 25, 2> PathSymProto::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    3, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967288,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    3,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_PathSymProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // string name = 1;
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(PathSymProto, _impl_.name_)}},
+    // double step = 2;
+    {::_pbi::TcParser::FastF64S1,
+     {17, 63, 0, PROTOBUF_FIELD_OFFSET(PathSymProto, _impl_.step_)}},
+    // double offset = 3;
+    {::_pbi::TcParser::FastF64S1,
+     {25, 63, 0, PROTOBUF_FIELD_OFFSET(PathSymProto, _impl_.offset_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string name = 1;
+    {PROTOBUF_FIELD_OFFSET(PathSymProto, _impl_.name_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // double step = 2;
+    {PROTOBUF_FIELD_OFFSET(PathSymProto, _impl_.step_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kDouble)},
+    // double offset = 3;
+    {PROTOBUF_FIELD_OFFSET(PathSymProto, _impl_.offset_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kDouble)},
+  }},
+  // no aux_entries
+  {{
+    "\14\4\0\0\0\0\0\0"
+    "PathSymProto"
+    "name"
+  }},
+};
+
 ::uint8_t* PathSymProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:PathSymProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // string name = 1;
   if (!this->_internal_name().empty()) {
     const std::string& _s = this->_internal_name();
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE, "PathSymProto.name");
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "PathSymProto.name");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
   // double step = 2;
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_step = this->_internal_step();
   ::uint64_t raw_step;
   memcpy(&raw_step, &tmp_step, sizeof(tmp_step));
@@ -879,7 +830,8 @@ failure:
   }
 
   // double offset = 3;
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_offset = this->_internal_offset();
   ::uint64_t raw_offset;
   memcpy(&raw_offset, &tmp_offset, sizeof(tmp_offset));
@@ -890,8 +842,9 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:PathSymProto)
   return target;
@@ -907,12 +860,13 @@ failure:
 
   // string name = 1;
   if (!this->_internal_name().empty()) {
-    total_size += 1 + ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
                                     this->_internal_name());
   }
 
   // double step = 2;
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_step = this->_internal_step();
   ::uint64_t raw_step;
   memcpy(&raw_step, &tmp_step, sizeof(tmp_step));
@@ -921,7 +875,8 @@ failure:
   }
 
   // double offset = 3;
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_offset = this->_internal_offset();
   ::uint64_t raw_offset;
   memcpy(&raw_offset, &tmp_offset, sizeof(tmp_offset));
@@ -930,7 +885,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -938,7 +893,7 @@ failure:
 }
 
 void PathSymProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const PathSymProto*>(
       &from));
 }
@@ -953,14 +908,16 @@ void PathSymProto::MergeFrom(const PathSymProto& from) {
   if (!from._internal_name().empty()) {
     _this->_internal_set_name(from._internal_name());
   }
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_step = from._internal_step();
   ::uint64_t raw_step;
   memcpy(&raw_step, &tmp_step, sizeof(tmp_step));
   if (raw_step != 0) {
     _this->_internal_set_step(from._internal_step());
   }
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_offset = from._internal_offset();
   ::uint64_t raw_offset;
   memcpy(&raw_offset, &tmp_offset, sizeof(tmp_offset));
@@ -977,7 +934,7 @@ void PathSymProto::CopyFrom(const PathSymProto& from) {
   MergeFrom(from);
 }
 
-bool PathSymProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool PathSymProto::IsInitialized() const {
   return true;
 }
 
@@ -988,7 +945,7 @@ void PathSymProto::InternalSwap(PathSymProto* other) {
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, lhs_arena,
                                        &other->_impl_.name_, rhs_arena);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(PathSymProto, _impl_.offset_)
       + sizeof(PathSymProto::_impl_.offset_)
       - PROTOBUF_FIELD_OFFSET(PathSymProto, _impl_.step_)>(
@@ -1017,39 +974,33 @@ class LineRuleProto::_Internal {
   }
 };
 
-const ::DashDotProto&
-LineRuleProto::_Internal::dashdot(const LineRuleProto* msg) {
+const ::DashDotProto& LineRuleProto::_Internal::dashdot(const LineRuleProto* msg) {
   return *msg->_impl_.dashdot_;
 }
-const ::PathSymProto&
-LineRuleProto::_Internal::pathsym(const LineRuleProto* msg) {
+const ::PathSymProto& LineRuleProto::_Internal::pathsym(const LineRuleProto* msg) {
   return *msg->_impl_.pathsym_;
 }
-LineRuleProto::LineRuleProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+LineRuleProto::LineRuleProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:LineRuleProto)
 }
-LineRuleProto::LineRuleProto(const LineRuleProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  LineRuleProto* const _this = this; (void)_this;
+LineRuleProto::LineRuleProto(const LineRuleProto& from) : ::google::protobuf::MessageLite() {
+  LineRuleProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){from._impl_._has_bits_}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.dashdot_){nullptr}
-    , decltype(_impl_.pathsym_){nullptr}
-    , decltype(_impl_.width_) {}
-
-    , decltype(_impl_.color_) {}
-
-    , decltype(_impl_.priority_) {}
-
-    , decltype(_impl_.join_) {}
-
-    , decltype(_impl_.cap_) {}
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.dashdot_){nullptr},
+      decltype(_impl_.pathsym_){nullptr},
+      decltype(_impl_.width_){},
+      decltype(_impl_.color_){},
+      decltype(_impl_.priority_){},
+      decltype(_impl_.join_){},
+      decltype(_impl_.cap_){},
   };
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
     _this->_impl_.dashdot_ = new ::DashDotProto(*from._impl_.dashdot_);
   }
@@ -1059,49 +1010,38 @@ LineRuleProto::LineRuleProto(const LineRuleProto& from)
   ::memcpy(&_impl_.width_, &from._impl_.width_,
     static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.cap_) -
     reinterpret_cast<char*>(&_impl_.width_)) + sizeof(_impl_.cap_));
+
   // @@protoc_insertion_point(copy_constructor:LineRuleProto)
 }
-
 inline void LineRuleProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.dashdot_){nullptr}
-    , decltype(_impl_.pathsym_){nullptr}
-    , decltype(_impl_.width_) { 0 }
-
-    , decltype(_impl_.color_) { 0u }
-
-    , decltype(_impl_.priority_) { 0 }
-
-    , decltype(_impl_.join_) { 0 }
-
-    , decltype(_impl_.cap_) { 0 }
-
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.dashdot_){nullptr},
+      decltype(_impl_.pathsym_){nullptr},
+      decltype(_impl_.width_){0},
+      decltype(_impl_.color_){0u},
+      decltype(_impl_.priority_){0},
+      decltype(_impl_.join_){0},
+      decltype(_impl_.cap_){0},
   };
 }
-
 LineRuleProto::~LineRuleProto() {
   // @@protoc_insertion_point(destructor:LineRuleProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void LineRuleProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.dashdot_;
   if (this != internal_default_instance()) delete _impl_.pathsym_;
 }
-
 void LineRuleProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void LineRuleProto::Clear() {
+PROTOBUF_NOINLINE void LineRuleProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:LineRuleProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -1125,110 +1065,91 @@ void LineRuleProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* LineRuleProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  _Internal::HasBits has_bits{};
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // double width = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 9)) {
-          _impl_.width_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
-          ptr += sizeof(double);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // uint32 color = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 16)) {
-          _impl_.color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .DashDotProto dashdot = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_dashdot(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // int32 priority = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 32)) {
-          _impl_.priority_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .PathSymProto pathsym = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 42)) {
-          ptr = ctx->ParseMessage(_internal_mutable_pathsym(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .LineJoin join = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 48)) {
-          ::int32_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-          _internal_set_join(static_cast<::LineJoin>(val));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .LineCap cap = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 56)) {
-          ::int32_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-          _internal_set_cap(static_cast<::LineCap>(val));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
-  _impl_._has_bits_.Or(has_bits);
+const char* LineRuleProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<3, 7, 2, 0, 2> LineRuleProto::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_._has_bits_),
+    0, // no _extensions_
+    7, 56,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967168,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    7,  // num_field_entries
+    2,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_LineRuleProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // double width = 1;
+    {::_pbi::TcParser::FastF64S1,
+     {9, 63, 0, PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.width_)}},
+    // uint32 color = 2;
+    {::_pbi::TcParser::FastV32S1,
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.color_)}},
+    // .DashDotProto dashdot = 3;
+    {::_pbi::TcParser::FastMtS1,
+     {26, 0, 0, PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.dashdot_)}},
+    // int32 priority = 4;
+    {::_pbi::TcParser::FastV32S1,
+     {32, 63, 0, PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.priority_)}},
+    // .PathSymProto pathsym = 5;
+    {::_pbi::TcParser::FastMtS1,
+     {42, 1, 1, PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.pathsym_)}},
+    // .LineJoin join = 6;
+    {::_pbi::TcParser::FastV32S1,
+     {48, 63, 0, PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.join_)}},
+    // .LineCap cap = 7;
+    {::_pbi::TcParser::FastV32S1,
+     {56, 63, 0, PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.cap_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // double width = 1;
+    {PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.width_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kDouble)},
+    // uint32 color = 2;
+    {PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.color_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUInt32)},
+    // .DashDotProto dashdot = 3;
+    {PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.dashdot_), _Internal::kHasBitsOffset + 0, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // int32 priority = 4;
+    {PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.priority_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // .PathSymProto pathsym = 5;
+    {PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.pathsym_), _Internal::kHasBitsOffset + 1, 1,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .LineJoin join = 6;
+    {PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.join_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kOpenEnum)},
+    // .LineCap cap = 7;
+    {PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.cap_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kOpenEnum)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::DashDotProto>()},
+    {::_pbi::TcParser::GetTable<::PathSymProto>()},
+  }}, {{
+  }},
+};
+
 ::uint8_t* LineRuleProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:LineRuleProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // double width = 1;
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_width = this->_internal_width();
   ::uint64_t raw_width;
   memcpy(&raw_width, &tmp_width, sizeof(tmp_width));
@@ -1248,21 +1169,21 @@ failure:
   cached_has_bits = _impl_._has_bits_[0];
   // .DashDotProto dashdot = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(3, _Internal::dashdot(this),
         _Internal::dashdot(this).GetCachedSize(), target, stream);
   }
 
   // int32 priority = 4;
   if (this->_internal_priority() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        4, this->_internal_priority(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<4>(
+            stream, this->_internal_priority(), target);
   }
 
   // .PathSymProto pathsym = 5;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(5, _Internal::pathsym(this),
         _Internal::pathsym(this).GetCachedSize(), target, stream);
   }
@@ -1282,8 +1203,9 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:LineRuleProto)
   return target;
@@ -1302,20 +1224,21 @@ failure:
     // .DashDotProto dashdot = 3;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.dashdot_);
     }
 
     // .PathSymProto pathsym = 5;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.pathsym_);
     }
 
   }
   // double width = 1;
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_width = this->_internal_width();
   ::uint64_t raw_width;
   memcpy(&raw_width, &tmp_width, sizeof(tmp_width));
@@ -1348,7 +1271,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -1356,7 +1279,7 @@ failure:
 }
 
 void LineRuleProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const LineRuleProto*>(
       &from));
 }
@@ -1379,7 +1302,8 @@ void LineRuleProto::MergeFrom(const LineRuleProto& from) {
           from._internal_pathsym());
     }
   }
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_width = from._internal_width();
   ::uint64_t raw_width;
   memcpy(&raw_width, &tmp_width, sizeof(tmp_width));
@@ -1408,7 +1332,7 @@ void LineRuleProto::CopyFrom(const LineRuleProto& from) {
   MergeFrom(from);
 }
 
-bool LineRuleProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool LineRuleProto::IsInitialized() const {
   return true;
 }
 
@@ -1416,7 +1340,7 @@ void LineRuleProto::InternalSwap(LineRuleProto* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.cap_)
       + sizeof(LineRuleProto::_impl_.cap_)
       - PROTOBUF_FIELD_OFFSET(LineRuleProto, _impl_.dashdot_)>(
@@ -1445,37 +1369,32 @@ class LineDefProto::_Internal {
   }
 };
 
-const ::DashDotProto&
-LineDefProto::_Internal::dashdot(const LineDefProto* msg) {
+const ::DashDotProto& LineDefProto::_Internal::dashdot(const LineDefProto* msg) {
   return *msg->_impl_.dashdot_;
 }
-const ::PathSymProto&
-LineDefProto::_Internal::pathsym(const LineDefProto* msg) {
+const ::PathSymProto& LineDefProto::_Internal::pathsym(const LineDefProto* msg) {
   return *msg->_impl_.pathsym_;
 }
-LineDefProto::LineDefProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+LineDefProto::LineDefProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:LineDefProto)
 }
-LineDefProto::LineDefProto(const LineDefProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  LineDefProto* const _this = this; (void)_this;
+LineDefProto::LineDefProto(const LineDefProto& from) : ::google::protobuf::MessageLite() {
+  LineDefProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){from._impl_._has_bits_}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.dashdot_){nullptr}
-    , decltype(_impl_.pathsym_){nullptr}
-    , decltype(_impl_.width_) {}
-
-    , decltype(_impl_.color_) {}
-
-    , decltype(_impl_.join_) {}
-
-    , decltype(_impl_.cap_) {}
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.dashdot_){nullptr},
+      decltype(_impl_.pathsym_){nullptr},
+      decltype(_impl_.width_){},
+      decltype(_impl_.color_){},
+      decltype(_impl_.join_){},
+      decltype(_impl_.cap_){},
   };
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
     _this->_impl_.dashdot_ = new ::DashDotProto(*from._impl_.dashdot_);
   }
@@ -1485,47 +1404,37 @@ LineDefProto::LineDefProto(const LineDefProto& from)
   ::memcpy(&_impl_.width_, &from._impl_.width_,
     static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.cap_) -
     reinterpret_cast<char*>(&_impl_.width_)) + sizeof(_impl_.cap_));
+
   // @@protoc_insertion_point(copy_constructor:LineDefProto)
 }
-
 inline void LineDefProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.dashdot_){nullptr}
-    , decltype(_impl_.pathsym_){nullptr}
-    , decltype(_impl_.width_) { 0 }
-
-    , decltype(_impl_.color_) { 0u }
-
-    , decltype(_impl_.join_) { 0 }
-
-    , decltype(_impl_.cap_) { 0 }
-
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.dashdot_){nullptr},
+      decltype(_impl_.pathsym_){nullptr},
+      decltype(_impl_.width_){0},
+      decltype(_impl_.color_){0u},
+      decltype(_impl_.join_){0},
+      decltype(_impl_.cap_){0},
   };
 }
-
 LineDefProto::~LineDefProto() {
   // @@protoc_insertion_point(destructor:LineDefProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void LineDefProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.dashdot_;
   if (this != internal_default_instance()) delete _impl_.pathsym_;
 }
-
 void LineDefProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void LineDefProto::Clear() {
+PROTOBUF_NOINLINE void LineDefProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:LineDefProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -1549,101 +1458,86 @@ void LineDefProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* LineDefProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  _Internal::HasBits has_bits{};
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // double width = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 9)) {
-          _impl_.width_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
-          ptr += sizeof(double);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // uint32 color = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 16)) {
-          _impl_.color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .DashDotProto dashdot = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_dashdot(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .PathSymProto pathsym = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 34)) {
-          ptr = ctx->ParseMessage(_internal_mutable_pathsym(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .LineJoin join = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 48)) {
-          ::int32_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-          _internal_set_join(static_cast<::LineJoin>(val));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .LineCap cap = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 56)) {
-          ::int32_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-          _internal_set_cap(static_cast<::LineCap>(val));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
-  _impl_._has_bits_.Or(has_bits);
+const char* LineDefProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<3, 6, 2, 0, 2> LineDefProto::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_._has_bits_),
+    0, // no _extensions_
+    7, 56,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967184,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    6,  // num_field_entries
+    2,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_LineDefProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // double width = 1;
+    {::_pbi::TcParser::FastF64S1,
+     {9, 63, 0, PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.width_)}},
+    // uint32 color = 2;
+    {::_pbi::TcParser::FastV32S1,
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.color_)}},
+    // .DashDotProto dashdot = 3;
+    {::_pbi::TcParser::FastMtS1,
+     {26, 0, 0, PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.dashdot_)}},
+    // .PathSymProto pathsym = 4;
+    {::_pbi::TcParser::FastMtS1,
+     {34, 1, 1, PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.pathsym_)}},
+    {::_pbi::TcParser::MiniParse, {}},
+    // .LineJoin join = 6;
+    {::_pbi::TcParser::FastV32S1,
+     {48, 63, 0, PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.join_)}},
+    // .LineCap cap = 7;
+    {::_pbi::TcParser::FastV32S1,
+     {56, 63, 0, PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.cap_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // double width = 1;
+    {PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.width_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kDouble)},
+    // uint32 color = 2;
+    {PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.color_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUInt32)},
+    // .DashDotProto dashdot = 3;
+    {PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.dashdot_), _Internal::kHasBitsOffset + 0, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .PathSymProto pathsym = 4;
+    {PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.pathsym_), _Internal::kHasBitsOffset + 1, 1,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .LineJoin join = 6;
+    {PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.join_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kOpenEnum)},
+    // .LineCap cap = 7;
+    {PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.cap_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kOpenEnum)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::DashDotProto>()},
+    {::_pbi::TcParser::GetTable<::PathSymProto>()},
+  }}, {{
+  }},
+};
+
 ::uint8_t* LineDefProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:LineDefProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // double width = 1;
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_width = this->_internal_width();
   ::uint64_t raw_width;
   memcpy(&raw_width, &tmp_width, sizeof(tmp_width));
@@ -1663,14 +1557,14 @@ failure:
   cached_has_bits = _impl_._has_bits_[0];
   // .DashDotProto dashdot = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(3, _Internal::dashdot(this),
         _Internal::dashdot(this).GetCachedSize(), target, stream);
   }
 
   // .PathSymProto pathsym = 4;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(4, _Internal::pathsym(this),
         _Internal::pathsym(this).GetCachedSize(), target, stream);
   }
@@ -1690,8 +1584,9 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:LineDefProto)
   return target;
@@ -1710,20 +1605,21 @@ failure:
     // .DashDotProto dashdot = 3;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.dashdot_);
     }
 
     // .PathSymProto pathsym = 4;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.pathsym_);
     }
 
   }
   // double width = 1;
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_width = this->_internal_width();
   ::uint64_t raw_width;
   memcpy(&raw_width, &tmp_width, sizeof(tmp_width));
@@ -1750,7 +1646,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -1758,7 +1654,7 @@ failure:
 }
 
 void LineDefProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const LineDefProto*>(
       &from));
 }
@@ -1781,7 +1677,8 @@ void LineDefProto::MergeFrom(const LineDefProto& from) {
           from._internal_pathsym());
     }
   }
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_width = from._internal_width();
   ::uint64_t raw_width;
   memcpy(&raw_width, &tmp_width, sizeof(tmp_width));
@@ -1807,7 +1704,7 @@ void LineDefProto::CopyFrom(const LineDefProto& from) {
   MergeFrom(from);
 }
 
-bool LineDefProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool LineDefProto::IsInitialized() const {
   return true;
 }
 
@@ -1815,7 +1712,7 @@ void LineDefProto::InternalSwap(LineDefProto* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.cap_)
       + sizeof(LineDefProto::_impl_.cap_)
       - PROTOBUF_FIELD_OFFSET(LineDefProto, _impl_.dashdot_)>(
@@ -1840,69 +1737,59 @@ class AreaRuleProto::_Internal {
   }
 };
 
-const ::LineDefProto&
-AreaRuleProto::_Internal::border(const AreaRuleProto* msg) {
+const ::LineDefProto& AreaRuleProto::_Internal::border(const AreaRuleProto* msg) {
   return *msg->_impl_.border_;
 }
-AreaRuleProto::AreaRuleProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+AreaRuleProto::AreaRuleProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:AreaRuleProto)
 }
-AreaRuleProto::AreaRuleProto(const AreaRuleProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  AreaRuleProto* const _this = this; (void)_this;
+AreaRuleProto::AreaRuleProto(const AreaRuleProto& from) : ::google::protobuf::MessageLite() {
+  AreaRuleProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){from._impl_._has_bits_}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.border_){nullptr}
-    , decltype(_impl_.color_) {}
-
-    , decltype(_impl_.priority_) {}
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.border_){nullptr},
+      decltype(_impl_.color_){},
+      decltype(_impl_.priority_){},
   };
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
     _this->_impl_.border_ = new ::LineDefProto(*from._impl_.border_);
   }
   ::memcpy(&_impl_.color_, &from._impl_.color_,
     static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.priority_) -
     reinterpret_cast<char*>(&_impl_.color_)) + sizeof(_impl_.priority_));
+
   // @@protoc_insertion_point(copy_constructor:AreaRuleProto)
 }
-
 inline void AreaRuleProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.border_){nullptr}
-    , decltype(_impl_.color_) { 0u }
-
-    , decltype(_impl_.priority_) { 0 }
-
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.border_){nullptr},
+      decltype(_impl_.color_){0u},
+      decltype(_impl_.priority_){0},
   };
 }
-
 AreaRuleProto::~AreaRuleProto() {
   // @@protoc_insertion_point(destructor:AreaRuleProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void AreaRuleProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.border_;
 }
-
 void AreaRuleProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void AreaRuleProto::Clear() {
+PROTOBUF_NOINLINE void AreaRuleProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:AreaRuleProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -1920,69 +1807,62 @@ void AreaRuleProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* AreaRuleProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  _Internal::HasBits has_bits{};
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // uint32 color = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 8)) {
-          _impl_.color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .LineDefProto border = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 18)) {
-          ptr = ctx->ParseMessage(_internal_mutable_border(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // int32 priority = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 24)) {
-          _impl_.priority_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
-  _impl_._has_bits_.Or(has_bits);
+const char* AreaRuleProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 3, 1, 0, 2> AreaRuleProto::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(AreaRuleProto, _impl_._has_bits_),
+    0, // no _extensions_
+    3, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967288,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    3,  // num_field_entries
+    1,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_AreaRuleProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // uint32 color = 1;
+    {::_pbi::TcParser::FastV32S1,
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(AreaRuleProto, _impl_.color_)}},
+    // .LineDefProto border = 2;
+    {::_pbi::TcParser::FastMtS1,
+     {18, 0, 0, PROTOBUF_FIELD_OFFSET(AreaRuleProto, _impl_.border_)}},
+    // int32 priority = 3;
+    {::_pbi::TcParser::FastV32S1,
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(AreaRuleProto, _impl_.priority_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // uint32 color = 1;
+    {PROTOBUF_FIELD_OFFSET(AreaRuleProto, _impl_.color_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUInt32)},
+    // .LineDefProto border = 2;
+    {PROTOBUF_FIELD_OFFSET(AreaRuleProto, _impl_.border_), _Internal::kHasBitsOffset + 0, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // int32 priority = 3;
+    {PROTOBUF_FIELD_OFFSET(AreaRuleProto, _impl_.priority_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::LineDefProto>()},
+  }}, {{
+  }},
+};
+
 ::uint8_t* AreaRuleProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:AreaRuleProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // uint32 color = 1;
   if (this->_internal_color() != 0) {
@@ -1994,21 +1874,22 @@ failure:
   cached_has_bits = _impl_._has_bits_[0];
   // .LineDefProto border = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(2, _Internal::border(this),
         _Internal::border(this).GetCachedSize(), target, stream);
   }
 
   // int32 priority = 3;
   if (this->_internal_priority() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        3, this->_internal_priority(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<3>(
+            stream, this->_internal_priority(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:AreaRuleProto)
   return target;
@@ -2026,7 +1907,7 @@ failure:
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
         *_impl_.border_);
   }
 
@@ -2043,7 +1924,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -2051,7 +1932,7 @@ failure:
 }
 
 void AreaRuleProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const AreaRuleProto*>(
       &from));
 }
@@ -2083,7 +1964,7 @@ void AreaRuleProto::CopyFrom(const AreaRuleProto& from) {
   MergeFrom(from);
 }
 
-bool AreaRuleProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool AreaRuleProto::IsInitialized() const {
   return true;
 }
 
@@ -2091,7 +1972,7 @@ void AreaRuleProto::InternalSwap(AreaRuleProto* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(AreaRuleProto, _impl_.priority_)
       + sizeof(AreaRuleProto::_impl_.priority_)
       - PROTOBUF_FIELD_OFFSET(AreaRuleProto, _impl_.border_)>(
@@ -2109,26 +1990,23 @@ class SymbolRuleProto::_Internal {
  public:
 };
 
-SymbolRuleProto::SymbolRuleProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+SymbolRuleProto::SymbolRuleProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:SymbolRuleProto)
 }
-SymbolRuleProto::SymbolRuleProto(const SymbolRuleProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  SymbolRuleProto* const _this = this; (void)_this;
+SymbolRuleProto::SymbolRuleProto(const SymbolRuleProto& from) : ::google::protobuf::MessageLite() {
+  SymbolRuleProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.name_) {}
-
-    , decltype(_impl_.apply_for_type_) {}
-
-    , decltype(_impl_.priority_) {}
-
-    , decltype(_impl_.min_distance_) {}
-
-    , /*decltype(_impl_._cached_size_)*/{}};
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+      decltype(_impl_.name_){},
+      decltype(_impl_.apply_for_type_){},
+      decltype(_impl_.priority_){},
+      decltype(_impl_.min_distance_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   _impl_.name_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
         _impl_.name_.Set("", GetArenaForAllocation());
@@ -2139,47 +2017,37 @@ SymbolRuleProto::SymbolRuleProto(const SymbolRuleProto& from)
   ::memcpy(&_impl_.apply_for_type_, &from._impl_.apply_for_type_,
     static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.min_distance_) -
     reinterpret_cast<char*>(&_impl_.apply_for_type_)) + sizeof(_impl_.min_distance_));
+
   // @@protoc_insertion_point(copy_constructor:SymbolRuleProto)
 }
-
 inline void SymbolRuleProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_.name_) {}
-
-    , decltype(_impl_.apply_for_type_) { 0 }
-
-    , decltype(_impl_.priority_) { 0 }
-
-    , decltype(_impl_.min_distance_) { 0 }
-
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.name_){},
+      decltype(_impl_.apply_for_type_){0},
+      decltype(_impl_.priority_){0},
+      decltype(_impl_.min_distance_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
   _impl_.name_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
         _impl_.name_.Set("", GetArenaForAllocation());
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
-
 SymbolRuleProto::~SymbolRuleProto() {
   // @@protoc_insertion_point(destructor:SymbolRuleProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void SymbolRuleProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.name_.Destroy();
 }
-
 void SymbolRuleProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void SymbolRuleProto::Clear() {
+PROTOBUF_NOINLINE void SymbolRuleProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:SymbolRuleProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -2192,111 +2060,104 @@ void SymbolRuleProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* SymbolRuleProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // string name = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
-          auto str = _internal_mutable_name();
-          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, nullptr));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // int32 apply_for_type = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 16)) {
-          _impl_.apply_for_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // int32 priority = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 24)) {
-          _impl_.priority_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // int32 min_distance = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 32)) {
-          _impl_.min_distance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* SymbolRuleProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 4, 0, 28, 2> SymbolRuleProto::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    4, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967280,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    4,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_SymbolRuleProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    // int32 min_distance = 4;
+    {::_pbi::TcParser::FastV32S1,
+     {32, 63, 0, PROTOBUF_FIELD_OFFSET(SymbolRuleProto, _impl_.min_distance_)}},
+    // string name = 1;
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(SymbolRuleProto, _impl_.name_)}},
+    // int32 apply_for_type = 2;
+    {::_pbi::TcParser::FastV32S1,
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(SymbolRuleProto, _impl_.apply_for_type_)}},
+    // int32 priority = 3;
+    {::_pbi::TcParser::FastV32S1,
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(SymbolRuleProto, _impl_.priority_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string name = 1;
+    {PROTOBUF_FIELD_OFFSET(SymbolRuleProto, _impl_.name_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // int32 apply_for_type = 2;
+    {PROTOBUF_FIELD_OFFSET(SymbolRuleProto, _impl_.apply_for_type_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // int32 priority = 3;
+    {PROTOBUF_FIELD_OFFSET(SymbolRuleProto, _impl_.priority_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // int32 min_distance = 4;
+    {PROTOBUF_FIELD_OFFSET(SymbolRuleProto, _impl_.min_distance_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+  }},
+  // no aux_entries
+  {{
+    "\17\4\0\0\0\0\0\0"
+    "SymbolRuleProto"
+    "name"
+  }},
+};
+
 ::uint8_t* SymbolRuleProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SymbolRuleProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // string name = 1;
   if (!this->_internal_name().empty()) {
     const std::string& _s = this->_internal_name();
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE, "SymbolRuleProto.name");
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "SymbolRuleProto.name");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
   // int32 apply_for_type = 2;
   if (this->_internal_apply_for_type() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        2, this->_internal_apply_for_type(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<2>(
+            stream, this->_internal_apply_for_type(), target);
   }
 
   // int32 priority = 3;
   if (this->_internal_priority() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        3, this->_internal_priority(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<3>(
+            stream, this->_internal_priority(), target);
   }
 
   // int32 min_distance = 4;
   if (this->_internal_min_distance() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        4, this->_internal_min_distance(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<4>(
+            stream, this->_internal_min_distance(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SymbolRuleProto)
   return target;
@@ -2312,7 +2173,7 @@ failure:
 
   // string name = 1;
   if (!this->_internal_name().empty()) {
-    total_size += 1 + ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
                                     this->_internal_name());
   }
 
@@ -2335,7 +2196,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -2343,7 +2204,7 @@ failure:
 }
 
 void SymbolRuleProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const SymbolRuleProto*>(
       &from));
 }
@@ -2377,7 +2238,7 @@ void SymbolRuleProto::CopyFrom(const SymbolRuleProto& from) {
   MergeFrom(from);
 }
 
-bool SymbolRuleProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool SymbolRuleProto::IsInitialized() const {
   return true;
 }
 
@@ -2388,7 +2249,7 @@ void SymbolRuleProto::InternalSwap(SymbolRuleProto* other) {
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, lhs_arena,
                                        &other->_impl_.name_, rhs_arena);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SymbolRuleProto, _impl_.min_distance_)
       + sizeof(SymbolRuleProto::_impl_.min_distance_)
       - PROTOBUF_FIELD_OFFSET(SymbolRuleProto, _impl_.apply_for_type_)>(
@@ -2406,32 +2267,26 @@ class CaptionDefProto::_Internal {
  public:
 };
 
-CaptionDefProto::CaptionDefProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+CaptionDefProto::CaptionDefProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:CaptionDefProto)
 }
-CaptionDefProto::CaptionDefProto(const CaptionDefProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  CaptionDefProto* const _this = this; (void)_this;
+CaptionDefProto::CaptionDefProto(const CaptionDefProto& from) : ::google::protobuf::MessageLite() {
+  CaptionDefProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.text_) {}
-
-    , decltype(_impl_.height_) {}
-
-    , decltype(_impl_.color_) {}
-
-    , decltype(_impl_.stroke_color_) {}
-
-    , decltype(_impl_.offset_x_) {}
-
-    , decltype(_impl_.offset_y_) {}
-
-    , decltype(_impl_.is_optional_) {}
-
-    , /*decltype(_impl_._cached_size_)*/{}};
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+      decltype(_impl_.text_){},
+      decltype(_impl_.height_){},
+      decltype(_impl_.color_){},
+      decltype(_impl_.stroke_color_){},
+      decltype(_impl_.offset_x_){},
+      decltype(_impl_.offset_y_){},
+      decltype(_impl_.is_optional_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   _impl_.text_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
         _impl_.text_.Set("", GetArenaForAllocation());
@@ -2442,53 +2297,40 @@ CaptionDefProto::CaptionDefProto(const CaptionDefProto& from)
   ::memcpy(&_impl_.height_, &from._impl_.height_,
     static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.is_optional_) -
     reinterpret_cast<char*>(&_impl_.height_)) + sizeof(_impl_.is_optional_));
+
   // @@protoc_insertion_point(copy_constructor:CaptionDefProto)
 }
-
 inline void CaptionDefProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_.text_) {}
-
-    , decltype(_impl_.height_) { 0 }
-
-    , decltype(_impl_.color_) { 0u }
-
-    , decltype(_impl_.stroke_color_) { 0u }
-
-    , decltype(_impl_.offset_x_) { 0 }
-
-    , decltype(_impl_.offset_y_) { 0 }
-
-    , decltype(_impl_.is_optional_) { false }
-
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.text_){},
+      decltype(_impl_.height_){0},
+      decltype(_impl_.color_){0u},
+      decltype(_impl_.stroke_color_){0u},
+      decltype(_impl_.offset_x_){0},
+      decltype(_impl_.offset_y_){0},
+      decltype(_impl_.is_optional_){false},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
   _impl_.text_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
         _impl_.text_.Set("", GetArenaForAllocation());
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
-
 CaptionDefProto::~CaptionDefProto() {
   // @@protoc_insertion_point(destructor:CaptionDefProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void CaptionDefProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.text_.Destroy();
 }
-
 void CaptionDefProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void CaptionDefProto::Clear() {
+PROTOBUF_NOINLINE void CaptionDefProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:CaptionDefProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -2501,111 +2343,95 @@ void CaptionDefProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* CaptionDefProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // int32 height = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 8)) {
-          _impl_.height_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // uint32 color = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 16)) {
-          _impl_.color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // uint32 stroke_color = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 24)) {
-          _impl_.stroke_color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // int32 offset_x = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 32)) {
-          _impl_.offset_x_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // int32 offset_y = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 40)) {
-          _impl_.offset_y_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // string text = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 50)) {
-          auto str = _internal_mutable_text();
-          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, nullptr));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // bool is_optional = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 56)) {
-          _impl_.is_optional_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* CaptionDefProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<3, 7, 0, 28, 2> CaptionDefProto::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    7, 56,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967168,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    7,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_CaptionDefProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // int32 height = 1;
+    {::_pbi::TcParser::FastV32S1,
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.height_)}},
+    // uint32 color = 2;
+    {::_pbi::TcParser::FastV32S1,
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.color_)}},
+    // uint32 stroke_color = 3;
+    {::_pbi::TcParser::FastV32S1,
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.stroke_color_)}},
+    // int32 offset_x = 4;
+    {::_pbi::TcParser::FastV32S1,
+     {32, 63, 0, PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.offset_x_)}},
+    // int32 offset_y = 5;
+    {::_pbi::TcParser::FastV32S1,
+     {40, 63, 0, PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.offset_y_)}},
+    // string text = 6;
+    {::_pbi::TcParser::FastUS1,
+     {50, 63, 0, PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.text_)}},
+    // bool is_optional = 7;
+    {::_pbi::TcParser::FastV8S1,
+     {56, 63, 0, PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.is_optional_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // int32 height = 1;
+    {PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.height_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // uint32 color = 2;
+    {PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.color_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUInt32)},
+    // uint32 stroke_color = 3;
+    {PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.stroke_color_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUInt32)},
+    // int32 offset_x = 4;
+    {PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.offset_x_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // int32 offset_y = 5;
+    {PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.offset_y_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // string text = 6;
+    {PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.text_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // bool is_optional = 7;
+    {PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.is_optional_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kBool)},
+  }},
+  // no aux_entries
+  {{
+    "\17\0\0\0\0\0\4\0"
+    "CaptionDefProto"
+    "text"
+  }},
+};
+
 ::uint8_t* CaptionDefProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:CaptionDefProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // int32 height = 1;
   if (this->_internal_height() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        1, this->_internal_height(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<1>(
+            stream, this->_internal_height(), target);
   }
 
   // uint32 color = 2;
@@ -2624,23 +2450,23 @@ failure:
 
   // int32 offset_x = 4;
   if (this->_internal_offset_x() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        4, this->_internal_offset_x(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<4>(
+            stream, this->_internal_offset_x(), target);
   }
 
   // int32 offset_y = 5;
   if (this->_internal_offset_y() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        5, this->_internal_offset_y(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<5>(
+            stream, this->_internal_offset_y(), target);
   }
 
   // string text = 6;
   if (!this->_internal_text().empty()) {
     const std::string& _s = this->_internal_text();
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE, "CaptionDefProto.text");
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "CaptionDefProto.text");
     target = stream->WriteStringMaybeAliased(6, _s, target);
   }
 
@@ -2652,8 +2478,9 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:CaptionDefProto)
   return target;
@@ -2669,7 +2496,7 @@ failure:
 
   // string text = 6;
   if (!this->_internal_text().empty()) {
-    total_size += 1 + ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
                                     this->_internal_text());
   }
 
@@ -2709,7 +2536,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -2717,7 +2544,7 @@ failure:
 }
 
 void CaptionDefProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const CaptionDefProto*>(
       &from));
 }
@@ -2760,7 +2587,7 @@ void CaptionDefProto::CopyFrom(const CaptionDefProto& from) {
   MergeFrom(from);
 }
 
-bool CaptionDefProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool CaptionDefProto::IsInitialized() const {
   return true;
 }
 
@@ -2771,7 +2598,7 @@ void CaptionDefProto::InternalSwap(CaptionDefProto* other) {
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.text_, lhs_arena,
                                        &other->_impl_.text_, rhs_arena);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.is_optional_)
       + sizeof(CaptionDefProto::_impl_.is_optional_)
       - PROTOBUF_FIELD_OFFSET(CaptionDefProto, _impl_.height_)>(
@@ -2800,31 +2627,29 @@ class CaptionRuleProto::_Internal {
   }
 };
 
-const ::CaptionDefProto&
-CaptionRuleProto::_Internal::primary(const CaptionRuleProto* msg) {
+const ::CaptionDefProto& CaptionRuleProto::_Internal::primary(const CaptionRuleProto* msg) {
   return *msg->_impl_.primary_;
 }
-const ::CaptionDefProto&
-CaptionRuleProto::_Internal::secondary(const CaptionRuleProto* msg) {
+const ::CaptionDefProto& CaptionRuleProto::_Internal::secondary(const CaptionRuleProto* msg) {
   return *msg->_impl_.secondary_;
 }
-CaptionRuleProto::CaptionRuleProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+CaptionRuleProto::CaptionRuleProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:CaptionRuleProto)
 }
-CaptionRuleProto::CaptionRuleProto(const CaptionRuleProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  CaptionRuleProto* const _this = this; (void)_this;
+CaptionRuleProto::CaptionRuleProto(const CaptionRuleProto& from) : ::google::protobuf::MessageLite() {
+  CaptionRuleProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){from._impl_._has_bits_}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.primary_){nullptr}
-    , decltype(_impl_.secondary_){nullptr}
-    , decltype(_impl_.priority_) {}
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.primary_){nullptr},
+      decltype(_impl_.secondary_){nullptr},
+      decltype(_impl_.priority_){},
   };
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
     _this->_impl_.primary_ = new ::CaptionDefProto(*from._impl_.primary_);
   }
@@ -2832,41 +2657,34 @@ CaptionRuleProto::CaptionRuleProto(const CaptionRuleProto& from)
     _this->_impl_.secondary_ = new ::CaptionDefProto(*from._impl_.secondary_);
   }
   _this->_impl_.priority_ = from._impl_.priority_;
+
   // @@protoc_insertion_point(copy_constructor:CaptionRuleProto)
 }
-
 inline void CaptionRuleProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.primary_){nullptr}
-    , decltype(_impl_.secondary_){nullptr}
-    , decltype(_impl_.priority_) { 0 }
-
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.primary_){nullptr},
+      decltype(_impl_.secondary_){nullptr},
+      decltype(_impl_.priority_){0},
   };
 }
-
 CaptionRuleProto::~CaptionRuleProto() {
   // @@protoc_insertion_point(destructor:CaptionRuleProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void CaptionRuleProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.primary_;
   if (this != internal_default_instance()) delete _impl_.secondary_;
 }
-
 void CaptionRuleProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void CaptionRuleProto::Clear() {
+PROTOBUF_NOINLINE void CaptionRuleProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:CaptionRuleProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -2888,95 +2706,90 @@ void CaptionRuleProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* CaptionRuleProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  _Internal::HasBits has_bits{};
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // .CaptionDefProto primary = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_primary(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .CaptionDefProto secondary = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 18)) {
-          ptr = ctx->ParseMessage(_internal_mutable_secondary(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // int32 priority = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 24)) {
-          _impl_.priority_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
-  _impl_._has_bits_.Or(has_bits);
+const char* CaptionRuleProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 3, 2, 0, 2> CaptionRuleProto::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(CaptionRuleProto, _impl_._has_bits_),
+    0, // no _extensions_
+    3, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967288,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    3,  // num_field_entries
+    2,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_CaptionRuleProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // .CaptionDefProto primary = 1;
+    {::_pbi::TcParser::FastMtS1,
+     {10, 0, 0, PROTOBUF_FIELD_OFFSET(CaptionRuleProto, _impl_.primary_)}},
+    // .CaptionDefProto secondary = 2;
+    {::_pbi::TcParser::FastMtS1,
+     {18, 1, 1, PROTOBUF_FIELD_OFFSET(CaptionRuleProto, _impl_.secondary_)}},
+    // int32 priority = 3;
+    {::_pbi::TcParser::FastV32S1,
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(CaptionRuleProto, _impl_.priority_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // .CaptionDefProto primary = 1;
+    {PROTOBUF_FIELD_OFFSET(CaptionRuleProto, _impl_.primary_), _Internal::kHasBitsOffset + 0, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .CaptionDefProto secondary = 2;
+    {PROTOBUF_FIELD_OFFSET(CaptionRuleProto, _impl_.secondary_), _Internal::kHasBitsOffset + 1, 1,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // int32 priority = 3;
+    {PROTOBUF_FIELD_OFFSET(CaptionRuleProto, _impl_.priority_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::CaptionDefProto>()},
+    {::_pbi::TcParser::GetTable<::CaptionDefProto>()},
+  }}, {{
+  }},
+};
+
 ::uint8_t* CaptionRuleProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:CaptionRuleProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   cached_has_bits = _impl_._has_bits_[0];
   // .CaptionDefProto primary = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(1, _Internal::primary(this),
         _Internal::primary(this).GetCachedSize(), target, stream);
   }
 
   // .CaptionDefProto secondary = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(2, _Internal::secondary(this),
         _Internal::secondary(this).GetCachedSize(), target, stream);
   }
 
   // int32 priority = 3;
   if (this->_internal_priority() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        3, this->_internal_priority(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<3>(
+            stream, this->_internal_priority(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:CaptionRuleProto)
   return target;
@@ -2995,14 +2808,14 @@ failure:
     // .CaptionDefProto primary = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.primary_);
     }
 
     // .CaptionDefProto secondary = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.secondary_);
     }
 
@@ -3014,7 +2827,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -3022,7 +2835,7 @@ failure:
 }
 
 void CaptionRuleProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const CaptionRuleProto*>(
       &from));
 }
@@ -3058,7 +2871,7 @@ void CaptionRuleProto::CopyFrom(const CaptionRuleProto& from) {
   MergeFrom(from);
 }
 
-bool CaptionRuleProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool CaptionRuleProto::IsInitialized() const {
   return true;
 }
 
@@ -3066,7 +2879,7 @@ void CaptionRuleProto::InternalSwap(CaptionRuleProto* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CaptionRuleProto, _impl_.priority_)
       + sizeof(CaptionRuleProto::_impl_.priority_)
       - PROTOBUF_FIELD_OFFSET(CaptionRuleProto, _impl_.primary_)>(
@@ -3091,73 +2904,61 @@ class CircleRuleProto::_Internal {
   }
 };
 
-const ::LineDefProto&
-CircleRuleProto::_Internal::border(const CircleRuleProto* msg) {
+const ::LineDefProto& CircleRuleProto::_Internal::border(const CircleRuleProto* msg) {
   return *msg->_impl_.border_;
 }
-CircleRuleProto::CircleRuleProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+CircleRuleProto::CircleRuleProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:CircleRuleProto)
 }
-CircleRuleProto::CircleRuleProto(const CircleRuleProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  CircleRuleProto* const _this = this; (void)_this;
+CircleRuleProto::CircleRuleProto(const CircleRuleProto& from) : ::google::protobuf::MessageLite() {
+  CircleRuleProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){from._impl_._has_bits_}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.border_){nullptr}
-    , decltype(_impl_.radius_) {}
-
-    , decltype(_impl_.color_) {}
-
-    , decltype(_impl_.priority_) {}
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.border_){nullptr},
+      decltype(_impl_.radius_){},
+      decltype(_impl_.color_){},
+      decltype(_impl_.priority_){},
   };
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
     _this->_impl_.border_ = new ::LineDefProto(*from._impl_.border_);
   }
   ::memcpy(&_impl_.radius_, &from._impl_.radius_,
     static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.priority_) -
     reinterpret_cast<char*>(&_impl_.radius_)) + sizeof(_impl_.priority_));
+
   // @@protoc_insertion_point(copy_constructor:CircleRuleProto)
 }
-
 inline void CircleRuleProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.border_){nullptr}
-    , decltype(_impl_.radius_) { 0 }
-
-    , decltype(_impl_.color_) { 0u }
-
-    , decltype(_impl_.priority_) { 0 }
-
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.border_){nullptr},
+      decltype(_impl_.radius_){0},
+      decltype(_impl_.color_){0u},
+      decltype(_impl_.priority_){0},
   };
 }
-
 CircleRuleProto::~CircleRuleProto() {
   // @@protoc_insertion_point(destructor:CircleRuleProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void CircleRuleProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.border_;
 }
-
 void CircleRuleProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void CircleRuleProto::Clear() {
+PROTOBUF_NOINLINE void CircleRuleProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:CircleRuleProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -3175,81 +2976,71 @@ void CircleRuleProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* CircleRuleProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  _Internal::HasBits has_bits{};
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // double radius = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 9)) {
-          _impl_.radius_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
-          ptr += sizeof(double);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // uint32 color = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 16)) {
-          _impl_.color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .LineDefProto border = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_border(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // int32 priority = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 32)) {
-          _impl_.priority_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
-  _impl_._has_bits_.Or(has_bits);
+const char* CircleRuleProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 4, 1, 0, 2> CircleRuleProto::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(CircleRuleProto, _impl_._has_bits_),
+    0, // no _extensions_
+    4, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967280,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    4,  // num_field_entries
+    1,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_CircleRuleProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    // int32 priority = 4;
+    {::_pbi::TcParser::FastV32S1,
+     {32, 63, 0, PROTOBUF_FIELD_OFFSET(CircleRuleProto, _impl_.priority_)}},
+    // double radius = 1;
+    {::_pbi::TcParser::FastF64S1,
+     {9, 63, 0, PROTOBUF_FIELD_OFFSET(CircleRuleProto, _impl_.radius_)}},
+    // uint32 color = 2;
+    {::_pbi::TcParser::FastV32S1,
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(CircleRuleProto, _impl_.color_)}},
+    // .LineDefProto border = 3;
+    {::_pbi::TcParser::FastMtS1,
+     {26, 0, 0, PROTOBUF_FIELD_OFFSET(CircleRuleProto, _impl_.border_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // double radius = 1;
+    {PROTOBUF_FIELD_OFFSET(CircleRuleProto, _impl_.radius_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kDouble)},
+    // uint32 color = 2;
+    {PROTOBUF_FIELD_OFFSET(CircleRuleProto, _impl_.color_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUInt32)},
+    // .LineDefProto border = 3;
+    {PROTOBUF_FIELD_OFFSET(CircleRuleProto, _impl_.border_), _Internal::kHasBitsOffset + 0, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // int32 priority = 4;
+    {PROTOBUF_FIELD_OFFSET(CircleRuleProto, _impl_.priority_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::LineDefProto>()},
+  }}, {{
+  }},
+};
+
 ::uint8_t* CircleRuleProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:CircleRuleProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // double radius = 1;
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_radius = this->_internal_radius();
   ::uint64_t raw_radius;
   memcpy(&raw_radius, &tmp_radius, sizeof(tmp_radius));
@@ -3269,21 +3060,22 @@ failure:
   cached_has_bits = _impl_._has_bits_[0];
   // .LineDefProto border = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(3, _Internal::border(this),
         _Internal::border(this).GetCachedSize(), target, stream);
   }
 
   // int32 priority = 4;
   if (this->_internal_priority() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        4, this->_internal_priority(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<4>(
+            stream, this->_internal_priority(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:CircleRuleProto)
   return target;
@@ -3301,12 +3093,13 @@ failure:
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
         *_impl_.border_);
   }
 
   // double radius = 1;
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_radius = this->_internal_radius();
   ::uint64_t raw_radius;
   memcpy(&raw_radius, &tmp_radius, sizeof(tmp_radius));
@@ -3327,7 +3120,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -3335,7 +3128,7 @@ failure:
 }
 
 void CircleRuleProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const CircleRuleProto*>(
       &from));
 }
@@ -3351,7 +3144,8 @@ void CircleRuleProto::MergeFrom(const CircleRuleProto& from) {
     _this->_internal_mutable_border()->::LineDefProto::MergeFrom(
         from._internal_border());
   }
-  static_assert(sizeof(::uint64_t) == sizeof(double), "Code assumes ::uint64_t and double are the same size.");
+  static_assert(sizeof(::uint64_t) == sizeof(double),
+                "Code assumes ::uint64_t and double are the same size.");
   double tmp_radius = from._internal_radius();
   ::uint64_t raw_radius;
   memcpy(&raw_radius, &tmp_radius, sizeof(tmp_radius));
@@ -3374,7 +3168,7 @@ void CircleRuleProto::CopyFrom(const CircleRuleProto& from) {
   MergeFrom(from);
 }
 
-bool CircleRuleProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool CircleRuleProto::IsInitialized() const {
   return true;
 }
 
@@ -3382,7 +3176,7 @@ void CircleRuleProto::InternalSwap(CircleRuleProto* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CircleRuleProto, _impl_.priority_)
       + sizeof(CircleRuleProto::_impl_.priority_)
       - PROTOBUF_FIELD_OFFSET(CircleRuleProto, _impl_.border_)>(
@@ -3411,31 +3205,29 @@ class PathTextRuleProto::_Internal {
   }
 };
 
-const ::CaptionDefProto&
-PathTextRuleProto::_Internal::primary(const PathTextRuleProto* msg) {
+const ::CaptionDefProto& PathTextRuleProto::_Internal::primary(const PathTextRuleProto* msg) {
   return *msg->_impl_.primary_;
 }
-const ::CaptionDefProto&
-PathTextRuleProto::_Internal::secondary(const PathTextRuleProto* msg) {
+const ::CaptionDefProto& PathTextRuleProto::_Internal::secondary(const PathTextRuleProto* msg) {
   return *msg->_impl_.secondary_;
 }
-PathTextRuleProto::PathTextRuleProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+PathTextRuleProto::PathTextRuleProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:PathTextRuleProto)
 }
-PathTextRuleProto::PathTextRuleProto(const PathTextRuleProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  PathTextRuleProto* const _this = this; (void)_this;
+PathTextRuleProto::PathTextRuleProto(const PathTextRuleProto& from) : ::google::protobuf::MessageLite() {
+  PathTextRuleProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){from._impl_._has_bits_}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.primary_){nullptr}
-    , decltype(_impl_.secondary_){nullptr}
-    , decltype(_impl_.priority_) {}
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.primary_){nullptr},
+      decltype(_impl_.secondary_){nullptr},
+      decltype(_impl_.priority_){},
   };
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
     _this->_impl_.primary_ = new ::CaptionDefProto(*from._impl_.primary_);
   }
@@ -3443,41 +3235,34 @@ PathTextRuleProto::PathTextRuleProto(const PathTextRuleProto& from)
     _this->_impl_.secondary_ = new ::CaptionDefProto(*from._impl_.secondary_);
   }
   _this->_impl_.priority_ = from._impl_.priority_;
+
   // @@protoc_insertion_point(copy_constructor:PathTextRuleProto)
 }
-
 inline void PathTextRuleProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.primary_){nullptr}
-    , decltype(_impl_.secondary_){nullptr}
-    , decltype(_impl_.priority_) { 0 }
-
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.primary_){nullptr},
+      decltype(_impl_.secondary_){nullptr},
+      decltype(_impl_.priority_){0},
   };
 }
-
 PathTextRuleProto::~PathTextRuleProto() {
   // @@protoc_insertion_point(destructor:PathTextRuleProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void PathTextRuleProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.primary_;
   if (this != internal_default_instance()) delete _impl_.secondary_;
 }
-
 void PathTextRuleProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void PathTextRuleProto::Clear() {
+PROTOBUF_NOINLINE void PathTextRuleProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:PathTextRuleProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -3499,95 +3284,90 @@ void PathTextRuleProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* PathTextRuleProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  _Internal::HasBits has_bits{};
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // .CaptionDefProto primary = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_primary(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .CaptionDefProto secondary = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 18)) {
-          ptr = ctx->ParseMessage(_internal_mutable_secondary(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // int32 priority = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 24)) {
-          _impl_.priority_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
-  _impl_._has_bits_.Or(has_bits);
+const char* PathTextRuleProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 3, 2, 0, 2> PathTextRuleProto::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(PathTextRuleProto, _impl_._has_bits_),
+    0, // no _extensions_
+    3, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967288,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    3,  // num_field_entries
+    2,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_PathTextRuleProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // .CaptionDefProto primary = 1;
+    {::_pbi::TcParser::FastMtS1,
+     {10, 0, 0, PROTOBUF_FIELD_OFFSET(PathTextRuleProto, _impl_.primary_)}},
+    // .CaptionDefProto secondary = 2;
+    {::_pbi::TcParser::FastMtS1,
+     {18, 1, 1, PROTOBUF_FIELD_OFFSET(PathTextRuleProto, _impl_.secondary_)}},
+    // int32 priority = 3;
+    {::_pbi::TcParser::FastV32S1,
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(PathTextRuleProto, _impl_.priority_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // .CaptionDefProto primary = 1;
+    {PROTOBUF_FIELD_OFFSET(PathTextRuleProto, _impl_.primary_), _Internal::kHasBitsOffset + 0, 0,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .CaptionDefProto secondary = 2;
+    {PROTOBUF_FIELD_OFFSET(PathTextRuleProto, _impl_.secondary_), _Internal::kHasBitsOffset + 1, 1,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // int32 priority = 3;
+    {PROTOBUF_FIELD_OFFSET(PathTextRuleProto, _impl_.priority_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::CaptionDefProto>()},
+    {::_pbi::TcParser::GetTable<::CaptionDefProto>()},
+  }}, {{
+  }},
+};
+
 ::uint8_t* PathTextRuleProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:PathTextRuleProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   cached_has_bits = _impl_._has_bits_[0];
   // .CaptionDefProto primary = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(1, _Internal::primary(this),
         _Internal::primary(this).GetCachedSize(), target, stream);
   }
 
   // .CaptionDefProto secondary = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(2, _Internal::secondary(this),
         _Internal::secondary(this).GetCachedSize(), target, stream);
   }
 
   // int32 priority = 3;
   if (this->_internal_priority() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        3, this->_internal_priority(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<3>(
+            stream, this->_internal_priority(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:PathTextRuleProto)
   return target;
@@ -3606,14 +3386,14 @@ failure:
     // .CaptionDefProto primary = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.primary_);
     }
 
     // .CaptionDefProto secondary = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.secondary_);
     }
 
@@ -3625,7 +3405,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -3633,7 +3413,7 @@ failure:
 }
 
 void PathTextRuleProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const PathTextRuleProto*>(
       &from));
 }
@@ -3669,7 +3449,7 @@ void PathTextRuleProto::CopyFrom(const PathTextRuleProto& from) {
   MergeFrom(from);
 }
 
-bool PathTextRuleProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool PathTextRuleProto::IsInitialized() const {
   return true;
 }
 
@@ -3677,7 +3457,7 @@ void PathTextRuleProto::InternalSwap(PathTextRuleProto* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(PathTextRuleProto, _impl_.priority_)
       + sizeof(PathTextRuleProto::_impl_.priority_)
       - PROTOBUF_FIELD_OFFSET(PathTextRuleProto, _impl_.primary_)>(
@@ -3695,57 +3475,43 @@ class ShieldRuleProto::_Internal {
  public:
 };
 
-ShieldRuleProto::ShieldRuleProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+ShieldRuleProto::ShieldRuleProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:ShieldRuleProto)
 }
 ShieldRuleProto::ShieldRuleProto(const ShieldRuleProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(), _impl_(from._impl_) {
+    : ::google::protobuf::MessageLite(), _impl_(from._impl_) {
   _internal_metadata_.MergeFrom<std::string>(
       from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:ShieldRuleProto)
 }
-
 inline void ShieldRuleProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_.height_) { 0 }
-
-    , decltype(_impl_.color_) { 0u }
-
-    , decltype(_impl_.stroke_color_) { 0u }
-
-    , decltype(_impl_.priority_) { 0 }
-
-    , decltype(_impl_.min_distance_) { 0 }
-
-    , decltype(_impl_.text_color_) { 0u }
-
-    , decltype(_impl_.text_stroke_color_) { 0u }
-
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.height_){0},
+      decltype(_impl_.color_){0u},
+      decltype(_impl_.stroke_color_){0u},
+      decltype(_impl_.priority_){0},
+      decltype(_impl_.min_distance_){0},
+      decltype(_impl_.text_color_){0u},
+      decltype(_impl_.text_stroke_color_){0u},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
 }
-
 ShieldRuleProto::~ShieldRuleProto() {
   // @@protoc_insertion_point(destructor:ShieldRuleProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void ShieldRuleProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
 }
-
 void ShieldRuleProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void ShieldRuleProto::Clear() {
+PROTOBUF_NOINLINE void ShieldRuleProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:ShieldRuleProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -3757,109 +3523,92 @@ void ShieldRuleProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* ShieldRuleProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // int32 height = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 8)) {
-          _impl_.height_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // uint32 color = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 16)) {
-          _impl_.color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // uint32 stroke_color = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 24)) {
-          _impl_.stroke_color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // int32 priority = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 32)) {
-          _impl_.priority_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // int32 min_distance = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 40)) {
-          _impl_.min_distance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // uint32 text_color = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 48)) {
-          _impl_.text_color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // uint32 text_stroke_color = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 56)) {
-          _impl_.text_stroke_color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* ShieldRuleProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<3, 7, 0, 0, 2> ShieldRuleProto::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    7, 56,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967168,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    7,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_ShieldRuleProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // int32 height = 1;
+    {::_pbi::TcParser::FastV32S1,
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.height_)}},
+    // uint32 color = 2;
+    {::_pbi::TcParser::FastV32S1,
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.color_)}},
+    // uint32 stroke_color = 3;
+    {::_pbi::TcParser::FastV32S1,
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.stroke_color_)}},
+    // int32 priority = 4;
+    {::_pbi::TcParser::FastV32S1,
+     {32, 63, 0, PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.priority_)}},
+    // int32 min_distance = 5;
+    {::_pbi::TcParser::FastV32S1,
+     {40, 63, 0, PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.min_distance_)}},
+    // uint32 text_color = 6;
+    {::_pbi::TcParser::FastV32S1,
+     {48, 63, 0, PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.text_color_)}},
+    // uint32 text_stroke_color = 7;
+    {::_pbi::TcParser::FastV32S1,
+     {56, 63, 0, PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.text_stroke_color_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // int32 height = 1;
+    {PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.height_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // uint32 color = 2;
+    {PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.color_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUInt32)},
+    // uint32 stroke_color = 3;
+    {PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.stroke_color_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUInt32)},
+    // int32 priority = 4;
+    {PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.priority_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // int32 min_distance = 5;
+    {PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.min_distance_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // uint32 text_color = 6;
+    {PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.text_color_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUInt32)},
+    // uint32 text_stroke_color = 7;
+    {PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.text_stroke_color_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUInt32)},
+  }},
+  // no aux_entries
+  {{
+  }},
+};
+
 ::uint8_t* ShieldRuleProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ShieldRuleProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // int32 height = 1;
   if (this->_internal_height() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        1, this->_internal_height(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<1>(
+            stream, this->_internal_height(), target);
   }
 
   // uint32 color = 2;
@@ -3878,16 +3627,16 @@ failure:
 
   // int32 priority = 4;
   if (this->_internal_priority() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        4, this->_internal_priority(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<4>(
+            stream, this->_internal_priority(), target);
   }
 
   // int32 min_distance = 5;
   if (this->_internal_min_distance() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        5, this->_internal_min_distance(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<5>(
+            stream, this->_internal_min_distance(), target);
   }
 
   // uint32 text_color = 6;
@@ -3905,8 +3654,9 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ShieldRuleProto)
   return target;
@@ -3963,7 +3713,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -3971,7 +3721,7 @@ failure:
 }
 
 void ShieldRuleProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const ShieldRuleProto*>(
       &from));
 }
@@ -4014,14 +3764,14 @@ void ShieldRuleProto::CopyFrom(const ShieldRuleProto& from) {
   MergeFrom(from);
 }
 
-bool ShieldRuleProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool ShieldRuleProto::IsInitialized() const {
   return true;
 }
 
 void ShieldRuleProto::InternalSwap(ShieldRuleProto* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.text_stroke_color_)
       + sizeof(ShieldRuleProto::_impl_.text_stroke_color_)
       - PROTOBUF_FIELD_OFFSET(ShieldRuleProto, _impl_.height_)>(
@@ -4066,53 +3816,47 @@ class DrawElementProto::_Internal {
   }
 };
 
-const ::AreaRuleProto&
-DrawElementProto::_Internal::area(const DrawElementProto* msg) {
+const ::AreaRuleProto& DrawElementProto::_Internal::area(const DrawElementProto* msg) {
   return *msg->_impl_.area_;
 }
-const ::SymbolRuleProto&
-DrawElementProto::_Internal::symbol(const DrawElementProto* msg) {
+const ::SymbolRuleProto& DrawElementProto::_Internal::symbol(const DrawElementProto* msg) {
   return *msg->_impl_.symbol_;
 }
-const ::CaptionRuleProto&
-DrawElementProto::_Internal::caption(const DrawElementProto* msg) {
+const ::CaptionRuleProto& DrawElementProto::_Internal::caption(const DrawElementProto* msg) {
   return *msg->_impl_.caption_;
 }
-const ::CircleRuleProto&
-DrawElementProto::_Internal::circle(const DrawElementProto* msg) {
+const ::CircleRuleProto& DrawElementProto::_Internal::circle(const DrawElementProto* msg) {
   return *msg->_impl_.circle_;
 }
-const ::PathTextRuleProto&
-DrawElementProto::_Internal::path_text(const DrawElementProto* msg) {
+const ::PathTextRuleProto& DrawElementProto::_Internal::path_text(const DrawElementProto* msg) {
   return *msg->_impl_.path_text_;
 }
-const ::ShieldRuleProto&
-DrawElementProto::_Internal::shield(const DrawElementProto* msg) {
+const ::ShieldRuleProto& DrawElementProto::_Internal::shield(const DrawElementProto* msg) {
   return *msg->_impl_.shield_;
 }
-DrawElementProto::DrawElementProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+DrawElementProto::DrawElementProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:DrawElementProto)
 }
-DrawElementProto::DrawElementProto(const DrawElementProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  DrawElementProto* const _this = this; (void)_this;
+DrawElementProto::DrawElementProto(const DrawElementProto& from) : ::google::protobuf::MessageLite() {
+  DrawElementProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){from._impl_._has_bits_}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.lines_){from._impl_.lines_}
-    , decltype(_impl_.apply_if_){from._impl_.apply_if_}
-    , decltype(_impl_.area_){nullptr}
-    , decltype(_impl_.symbol_){nullptr}
-    , decltype(_impl_.caption_){nullptr}
-    , decltype(_impl_.circle_){nullptr}
-    , decltype(_impl_.path_text_){nullptr}
-    , decltype(_impl_.shield_){nullptr}
-    , decltype(_impl_.scale_) {}
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.lines_){from._impl_.lines_},
+      decltype(_impl_.apply_if_){from._impl_.apply_if_},
+      decltype(_impl_.area_){nullptr},
+      decltype(_impl_.symbol_){nullptr},
+      decltype(_impl_.caption_){nullptr},
+      decltype(_impl_.circle_){nullptr},
+      decltype(_impl_.path_text_){nullptr},
+      decltype(_impl_.shield_){nullptr},
+      decltype(_impl_.scale_){},
   };
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
     _this->_impl_.area_ = new ::AreaRuleProto(*from._impl_.area_);
   }
@@ -4132,39 +3876,33 @@ DrawElementProto::DrawElementProto(const DrawElementProto& from)
     _this->_impl_.shield_ = new ::ShieldRuleProto(*from._impl_.shield_);
   }
   _this->_impl_.scale_ = from._impl_.scale_;
+
   // @@protoc_insertion_point(copy_constructor:DrawElementProto)
 }
-
 inline void DrawElementProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.lines_){arena}
-    , decltype(_impl_.apply_if_){arena}
-    , decltype(_impl_.area_){nullptr}
-    , decltype(_impl_.symbol_){nullptr}
-    , decltype(_impl_.caption_){nullptr}
-    , decltype(_impl_.circle_){nullptr}
-    , decltype(_impl_.path_text_){nullptr}
-    , decltype(_impl_.shield_){nullptr}
-    , decltype(_impl_.scale_) { 0 }
-
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.lines_){arena},
+      decltype(_impl_.apply_if_){arena},
+      decltype(_impl_.area_){nullptr},
+      decltype(_impl_.symbol_){nullptr},
+      decltype(_impl_.caption_){nullptr},
+      decltype(_impl_.circle_){nullptr},
+      decltype(_impl_.path_text_){nullptr},
+      decltype(_impl_.shield_){nullptr},
+      decltype(_impl_.scale_){0},
   };
 }
-
 DrawElementProto::~DrawElementProto() {
   // @@protoc_insertion_point(destructor:DrawElementProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void DrawElementProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
-  _internal_mutable_lines()->~RepeatedPtrField();
+  _impl_.lines_.~RepeatedPtrField();
   _internal_mutable_apply_if()->~RepeatedPtrField();
   if (this != internal_default_instance()) delete _impl_.area_;
   if (this != internal_default_instance()) delete _impl_.symbol_;
@@ -4173,12 +3911,11 @@ inline void DrawElementProto::SharedDtor() {
   if (this != internal_default_instance()) delete _impl_.path_text_;
   if (this != internal_default_instance()) delete _impl_.shield_;
 }
-
 void DrawElementProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void DrawElementProto::Clear() {
+PROTOBUF_NOINLINE void DrawElementProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:DrawElementProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -4218,205 +3955,184 @@ void DrawElementProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* DrawElementProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  _Internal::HasBits has_bits{};
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // int32 scale = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 8)) {
-          _impl_.scale_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // repeated .LineRuleProto lines = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 18)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_lines(), ptr);
-            CHK_(ptr);
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .AreaRuleProto area = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_area(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .SymbolRuleProto symbol = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 34)) {
-          ptr = ctx->ParseMessage(_internal_mutable_symbol(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .CaptionRuleProto caption = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 42)) {
-          ptr = ctx->ParseMessage(_internal_mutable_caption(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .CircleRuleProto circle = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 50)) {
-          ptr = ctx->ParseMessage(_internal_mutable_circle(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .PathTextRuleProto path_text = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 58)) {
-          ptr = ctx->ParseMessage(_internal_mutable_path_text(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .ShieldRuleProto shield = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 66)) {
-          ptr = ctx->ParseMessage(_internal_mutable_shield(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // repeated string apply_if = 9;
-      case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 74)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            auto str = _internal_add_apply_if();
-            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(ptr);
-            CHK_(::_pbi::VerifyUTF8(str, nullptr));
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<74>(ptr));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
-  _impl_._has_bits_.Or(has_bits);
+const char* DrawElementProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<4, 9, 7, 41, 2> DrawElementProto::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_._has_bits_),
+    0, // no _extensions_
+    9, 120,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294966784,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    9,  // num_field_entries
+    7,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_DrawElementProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // int32 scale = 1;
+    {::_pbi::TcParser::FastV32S1,
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.scale_)}},
+    // repeated .LineRuleProto lines = 2;
+    {::_pbi::TcParser::FastMtR1,
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.lines_)}},
+    // .AreaRuleProto area = 3;
+    {::_pbi::TcParser::FastMtS1,
+     {26, 0, 1, PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.area_)}},
+    // .SymbolRuleProto symbol = 4;
+    {::_pbi::TcParser::FastMtS1,
+     {34, 1, 2, PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.symbol_)}},
+    // .CaptionRuleProto caption = 5;
+    {::_pbi::TcParser::FastMtS1,
+     {42, 2, 3, PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.caption_)}},
+    // .CircleRuleProto circle = 6;
+    {::_pbi::TcParser::FastMtS1,
+     {50, 3, 4, PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.circle_)}},
+    // .PathTextRuleProto path_text = 7;
+    {::_pbi::TcParser::FastMtS1,
+     {58, 4, 5, PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.path_text_)}},
+    // .ShieldRuleProto shield = 8;
+    {::_pbi::TcParser::FastMtS1,
+     {66, 5, 6, PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.shield_)}},
+    // repeated string apply_if = 9;
+    {::_pbi::TcParser::FastUR1,
+     {74, 63, 0, PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.apply_if_)}},
+    {::_pbi::TcParser::MiniParse, {}},
+    {::_pbi::TcParser::MiniParse, {}},
+    {::_pbi::TcParser::MiniParse, {}},
+    {::_pbi::TcParser::MiniParse, {}},
+    {::_pbi::TcParser::MiniParse, {}},
+    {::_pbi::TcParser::MiniParse, {}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // int32 scale = 1;
+    {PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.scale_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // repeated .LineRuleProto lines = 2;
+    {PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.lines_), -1, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .AreaRuleProto area = 3;
+    {PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.area_), _Internal::kHasBitsOffset + 0, 1,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .SymbolRuleProto symbol = 4;
+    {PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.symbol_), _Internal::kHasBitsOffset + 1, 2,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .CaptionRuleProto caption = 5;
+    {PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.caption_), _Internal::kHasBitsOffset + 2, 3,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .CircleRuleProto circle = 6;
+    {PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.circle_), _Internal::kHasBitsOffset + 3, 4,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .PathTextRuleProto path_text = 7;
+    {PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.path_text_), _Internal::kHasBitsOffset + 4, 5,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .ShieldRuleProto shield = 8;
+    {PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.shield_), _Internal::kHasBitsOffset + 5, 6,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+    // repeated string apply_if = 9;
+    {PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.apply_if_), -1, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kUtf8String | ::_fl::kRepSString)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::LineRuleProto>()},
+    {::_pbi::TcParser::GetTable<::AreaRuleProto>()},
+    {::_pbi::TcParser::GetTable<::SymbolRuleProto>()},
+    {::_pbi::TcParser::GetTable<::CaptionRuleProto>()},
+    {::_pbi::TcParser::GetTable<::CircleRuleProto>()},
+    {::_pbi::TcParser::GetTable<::PathTextRuleProto>()},
+    {::_pbi::TcParser::GetTable<::ShieldRuleProto>()},
+  }}, {{
+    "\20\0\0\0\0\0\0\0\0\10\0\0\0\0\0\0"
+    "DrawElementProto"
+    "apply_if"
+  }},
+};
+
 ::uint8_t* DrawElementProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:DrawElementProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // int32 scale = 1;
   if (this->_internal_scale() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(
-        1, this->_internal_scale(), target);
+    target = ::google::protobuf::internal::WireFormatLite::
+        WriteInt32ToArrayWithField<1>(
+            stream, this->_internal_scale(), target);
   }
 
   // repeated .LineRuleProto lines = 2;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_lines_size()); i < n; i++) {
-    const auto& repfield = this->_internal_lines(i);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    const auto& repfield = this->_internal_lines().Get(i);
+    target = ::google::protobuf::internal::WireFormatLite::
         InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   cached_has_bits = _impl_._has_bits_[0];
   // .AreaRuleProto area = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(3, _Internal::area(this),
         _Internal::area(this).GetCachedSize(), target, stream);
   }
 
   // .SymbolRuleProto symbol = 4;
   if (cached_has_bits & 0x00000002u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(4, _Internal::symbol(this),
         _Internal::symbol(this).GetCachedSize(), target, stream);
   }
 
   // .CaptionRuleProto caption = 5;
   if (cached_has_bits & 0x00000004u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(5, _Internal::caption(this),
         _Internal::caption(this).GetCachedSize(), target, stream);
   }
 
   // .CircleRuleProto circle = 6;
   if (cached_has_bits & 0x00000008u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(6, _Internal::circle(this),
         _Internal::circle(this).GetCachedSize(), target, stream);
   }
 
   // .PathTextRuleProto path_text = 7;
   if (cached_has_bits & 0x00000010u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(7, _Internal::path_text(this),
         _Internal::path_text(this).GetCachedSize(), target, stream);
   }
 
   // .ShieldRuleProto shield = 8;
   if (cached_has_bits & 0x00000020u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(8, _Internal::shield(this),
         _Internal::shield(this).GetCachedSize(), target, stream);
   }
 
   // repeated string apply_if = 9;
   for (int i = 0, n = this->_internal_apply_if_size(); i < n; ++i) {
-    const auto& s = this->_internal_apply_if(i);
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-        s.data(), static_cast<int>(s.length()), ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE, "DrawElementProto.apply_if");
+    const auto& s = this->_internal_apply_if().Get(i);
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "DrawElementProto.apply_if");
     target = stream->WriteString(9, s, target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:DrawElementProto)
   return target;
@@ -4434,57 +4150,55 @@ failure:
   total_size += 1UL * this->_internal_lines_size();
   for (const auto& msg : this->_internal_lines()) {
     total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+      ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
   }
-
   // repeated string apply_if = 9;
-  total_size += 1 * ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_internal_apply_if().size());
+  total_size += 1 * ::google::protobuf::internal::FromIntSize(_internal_apply_if().size());
   for (int i = 0, n = _internal_apply_if().size(); i < n; ++i) {
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
         _internal_apply_if().Get(i));
   }
-
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000003fu) {
     // .AreaRuleProto area = 3;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.area_);
     }
 
     // .SymbolRuleProto symbol = 4;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.symbol_);
     }
 
     // .CaptionRuleProto caption = 5;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.caption_);
     }
 
     // .CircleRuleProto circle = 6;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.circle_);
     }
 
     // .PathTextRuleProto path_text = 7;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.path_text_);
     }
 
     // .ShieldRuleProto shield = 8;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
           *_impl_.shield_);
     }
 
@@ -4496,7 +4210,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -4504,7 +4218,7 @@ failure:
 }
 
 void DrawElementProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const DrawElementProto*>(
       &from));
 }
@@ -4558,7 +4272,7 @@ void DrawElementProto::CopyFrom(const DrawElementProto& from) {
   MergeFrom(from);
 }
 
-bool DrawElementProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool DrawElementProto::IsInitialized() const {
   return true;
 }
 
@@ -4566,10 +4280,9 @@ void DrawElementProto::InternalSwap(DrawElementProto* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  _internal_mutable_lines()->InternalSwap(other->_internal_mutable_lines());
-  _internal_mutable_apply_if()->InternalSwap(
-      other->_internal_mutable_apply_if());
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  _impl_.lines_.InternalSwap(&other->_impl_.lines_);
+  _impl_.apply_if_.InternalSwap(&other->_impl_.apply_if_);
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.scale_)
       + sizeof(DrawElementProto::_impl_.scale_)
       - PROTOBUF_FIELD_OFFSET(DrawElementProto, _impl_.area_)>(
@@ -4587,21 +4300,21 @@ class ClassifElementProto::_Internal {
  public:
 };
 
-ClassifElementProto::ClassifElementProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+ClassifElementProto::ClassifElementProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:ClassifElementProto)
 }
-ClassifElementProto::ClassifElementProto(const ClassifElementProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  ClassifElementProto* const _this = this; (void)_this;
+ClassifElementProto::ClassifElementProto(const ClassifElementProto& from) : ::google::protobuf::MessageLite() {
+  ClassifElementProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.element_){from._impl_.element_}
-    , decltype(_impl_.name_) {}
-
-    , /*decltype(_impl_._cached_size_)*/{}};
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+      decltype(_impl_.element_){from._impl_.element_},
+      decltype(_impl_.name_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   _impl_.name_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
         _impl_.name_.Set("", GetArenaForAllocation());
@@ -4609,43 +4322,36 @@ ClassifElementProto::ClassifElementProto(const ClassifElementProto& from)
   if (!from._internal_name().empty()) {
     _this->_impl_.name_.Set(from._internal_name(), _this->GetArenaForAllocation());
   }
+
   // @@protoc_insertion_point(copy_constructor:ClassifElementProto)
 }
-
 inline void ClassifElementProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_.element_){arena}
-    , decltype(_impl_.name_) {}
-
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.element_){arena},
+      decltype(_impl_.name_){},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
   _impl_.name_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
         _impl_.name_.Set("", GetArenaForAllocation());
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
-
 ClassifElementProto::~ClassifElementProto() {
   // @@protoc_insertion_point(destructor:ClassifElementProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void ClassifElementProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
-  _internal_mutable_element()->~RepeatedPtrField();
+  _impl_.element_.~RepeatedPtrField();
   _impl_.name_.Destroy();
 }
-
 void ClassifElementProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void ClassifElementProto::Clear() {
+PROTOBUF_NOINLINE void ClassifElementProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:ClassifElementProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -4656,85 +4362,79 @@ void ClassifElementProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* ClassifElementProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // string name = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
-          auto str = _internal_mutable_name();
-          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, nullptr));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // repeated .DrawElementProto element = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 18)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_element(), ptr);
-            CHK_(ptr);
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* ClassifElementProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<1, 2, 1, 32, 2> ClassifElementProto::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    2, 8,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967292,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    2,  // num_field_entries
+    1,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_ClassifElementProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    // repeated .DrawElementProto element = 2;
+    {::_pbi::TcParser::FastMtR1,
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(ClassifElementProto, _impl_.element_)}},
+    // string name = 1;
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(ClassifElementProto, _impl_.name_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string name = 1;
+    {PROTOBUF_FIELD_OFFSET(ClassifElementProto, _impl_.name_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // repeated .DrawElementProto element = 2;
+    {PROTOBUF_FIELD_OFFSET(ClassifElementProto, _impl_.element_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::DrawElementProto>()},
+  }}, {{
+    "\23\4\0\0\0\0\0\0"
+    "ClassifElementProto"
+    "name"
+  }},
+};
+
 ::uint8_t* ClassifElementProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ClassifElementProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // string name = 1;
   if (!this->_internal_name().empty()) {
     const std::string& _s = this->_internal_name();
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE, "ClassifElementProto.name");
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "ClassifElementProto.name");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
   // repeated .DrawElementProto element = 2;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_element_size()); i < n; i++) {
-    const auto& repfield = this->_internal_element(i);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    const auto& repfield = this->_internal_element().Get(i);
+    target = ::google::protobuf::internal::WireFormatLite::
         InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ClassifElementProto)
   return target;
@@ -4752,17 +4452,16 @@ failure:
   total_size += 1UL * this->_internal_element_size();
   for (const auto& msg : this->_internal_element()) {
     total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+      ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
   }
-
   // string name = 1;
   if (!this->_internal_name().empty()) {
-    total_size += 1 + ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
                                     this->_internal_name());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -4770,7 +4469,7 @@ failure:
 }
 
 void ClassifElementProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const ClassifElementProto*>(
       &from));
 }
@@ -4796,7 +4495,7 @@ void ClassifElementProto::CopyFrom(const ClassifElementProto& from) {
   MergeFrom(from);
 }
 
-bool ClassifElementProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool ClassifElementProto::IsInitialized() const {
   return true;
 }
 
@@ -4805,7 +4504,7 @@ void ClassifElementProto::InternalSwap(ClassifElementProto* other) {
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _internal_mutable_element()->InternalSwap(other->_internal_mutable_element());
+  _impl_.element_.InternalSwap(&other->_impl_.element_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, lhs_arena,
                                        &other->_impl_.name_, rhs_arena);
 }
@@ -4820,26 +4519,23 @@ class ColorElementProto::_Internal {
  public:
 };
 
-ColorElementProto::ColorElementProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+ColorElementProto::ColorElementProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:ColorElementProto)
 }
-ColorElementProto::ColorElementProto(const ColorElementProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  ColorElementProto* const _this = this; (void)_this;
+ColorElementProto::ColorElementProto(const ColorElementProto& from) : ::google::protobuf::MessageLite() {
+  ColorElementProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.name_) {}
-
-    , decltype(_impl_.color_) {}
-
-    , decltype(_impl_.x_) {}
-
-    , decltype(_impl_.y_) {}
-
-    , /*decltype(_impl_._cached_size_)*/{}};
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+      decltype(_impl_.name_){},
+      decltype(_impl_.color_){},
+      decltype(_impl_.x_){},
+      decltype(_impl_.y_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   _impl_.name_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
         _impl_.name_.Set("", GetArenaForAllocation());
@@ -4850,47 +4546,37 @@ ColorElementProto::ColorElementProto(const ColorElementProto& from)
   ::memcpy(&_impl_.color_, &from._impl_.color_,
     static_cast<::size_t>(reinterpret_cast<char*>(&_impl_.y_) -
     reinterpret_cast<char*>(&_impl_.color_)) + sizeof(_impl_.y_));
+
   // @@protoc_insertion_point(copy_constructor:ColorElementProto)
 }
-
 inline void ColorElementProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_.name_) {}
-
-    , decltype(_impl_.color_) { 0u }
-
-    , decltype(_impl_.x_) { 0 }
-
-    , decltype(_impl_.y_) { 0 }
-
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.name_){},
+      decltype(_impl_.color_){0u},
+      decltype(_impl_.x_){0},
+      decltype(_impl_.y_){0},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
   _impl_.name_.InitDefault();
   #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
         _impl_.name_.Set("", GetArenaForAllocation());
   #endif  // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
-
 ColorElementProto::~ColorElementProto() {
   // @@protoc_insertion_point(destructor:ColorElementProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void ColorElementProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.name_.Destroy();
 }
-
 void ColorElementProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void ColorElementProto::Clear() {
+PROTOBUF_NOINLINE void ColorElementProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:ColorElementProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -4903,84 +4589,76 @@ void ColorElementProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* ColorElementProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // string name = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
-          auto str = _internal_mutable_name();
-          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, nullptr));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // uint32 color = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 16)) {
-          _impl_.color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // float x = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 29)) {
-          _impl_.x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
-          ptr += sizeof(float);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // float y = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 37)) {
-          _impl_.y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
-          ptr += sizeof(float);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* ColorElementProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 4, 0, 30, 2> ColorElementProto::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    4, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967280,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    4,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    &_ColorElementProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    // float y = 4;
+    {::_pbi::TcParser::FastF32S1,
+     {37, 63, 0, PROTOBUF_FIELD_OFFSET(ColorElementProto, _impl_.y_)}},
+    // string name = 1;
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(ColorElementProto, _impl_.name_)}},
+    // uint32 color = 2;
+    {::_pbi::TcParser::FastV32S1,
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(ColorElementProto, _impl_.color_)}},
+    // float x = 3;
+    {::_pbi::TcParser::FastF32S1,
+     {29, 63, 0, PROTOBUF_FIELD_OFFSET(ColorElementProto, _impl_.x_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string name = 1;
+    {PROTOBUF_FIELD_OFFSET(ColorElementProto, _impl_.name_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // uint32 color = 2;
+    {PROTOBUF_FIELD_OFFSET(ColorElementProto, _impl_.color_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUInt32)},
+    // float x = 3;
+    {PROTOBUF_FIELD_OFFSET(ColorElementProto, _impl_.x_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kFloat)},
+    // float y = 4;
+    {PROTOBUF_FIELD_OFFSET(ColorElementProto, _impl_.y_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kFloat)},
+  }},
+  // no aux_entries
+  {{
+    "\21\4\0\0\0\0\0\0"
+    "ColorElementProto"
+    "name"
+  }},
+};
+
 ::uint8_t* ColorElementProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ColorElementProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // string name = 1;
   if (!this->_internal_name().empty()) {
     const std::string& _s = this->_internal_name();
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-        _s.data(), static_cast<int>(_s.length()), ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE, "ColorElementProto.name");
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+        _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "ColorElementProto.name");
     target = stream->WriteStringMaybeAliased(1, _s, target);
   }
 
@@ -4992,7 +4670,8 @@ failure:
   }
 
   // float x = 3;
-  static_assert(sizeof(::uint32_t) == sizeof(float), "Code assumes ::uint32_t and float are the same size.");
+  static_assert(sizeof(::uint32_t) == sizeof(float),
+                "Code assumes ::uint32_t and float are the same size.");
   float tmp_x = this->_internal_x();
   ::uint32_t raw_x;
   memcpy(&raw_x, &tmp_x, sizeof(tmp_x));
@@ -5003,7 +4682,8 @@ failure:
   }
 
   // float y = 4;
-  static_assert(sizeof(::uint32_t) == sizeof(float), "Code assumes ::uint32_t and float are the same size.");
+  static_assert(sizeof(::uint32_t) == sizeof(float),
+                "Code assumes ::uint32_t and float are the same size.");
   float tmp_y = this->_internal_y();
   ::uint32_t raw_y;
   memcpy(&raw_y, &tmp_y, sizeof(tmp_y));
@@ -5014,8 +4694,9 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ColorElementProto)
   return target;
@@ -5031,7 +4712,7 @@ failure:
 
   // string name = 1;
   if (!this->_internal_name().empty()) {
-    total_size += 1 + ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+    total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
                                     this->_internal_name());
   }
 
@@ -5042,7 +4723,8 @@ failure:
   }
 
   // float x = 3;
-  static_assert(sizeof(::uint32_t) == sizeof(float), "Code assumes ::uint32_t and float are the same size.");
+  static_assert(sizeof(::uint32_t) == sizeof(float),
+                "Code assumes ::uint32_t and float are the same size.");
   float tmp_x = this->_internal_x();
   ::uint32_t raw_x;
   memcpy(&raw_x, &tmp_x, sizeof(tmp_x));
@@ -5051,7 +4733,8 @@ failure:
   }
 
   // float y = 4;
-  static_assert(sizeof(::uint32_t) == sizeof(float), "Code assumes ::uint32_t and float are the same size.");
+  static_assert(sizeof(::uint32_t) == sizeof(float),
+                "Code assumes ::uint32_t and float are the same size.");
   float tmp_y = this->_internal_y();
   ::uint32_t raw_y;
   memcpy(&raw_y, &tmp_y, sizeof(tmp_y));
@@ -5060,7 +4743,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -5068,7 +4751,7 @@ failure:
 }
 
 void ColorElementProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const ColorElementProto*>(
       &from));
 }
@@ -5086,14 +4769,16 @@ void ColorElementProto::MergeFrom(const ColorElementProto& from) {
   if (from._internal_color() != 0) {
     _this->_internal_set_color(from._internal_color());
   }
-  static_assert(sizeof(::uint32_t) == sizeof(float), "Code assumes ::uint32_t and float are the same size.");
+  static_assert(sizeof(::uint32_t) == sizeof(float),
+                "Code assumes ::uint32_t and float are the same size.");
   float tmp_x = from._internal_x();
   ::uint32_t raw_x;
   memcpy(&raw_x, &tmp_x, sizeof(tmp_x));
   if (raw_x != 0) {
     _this->_internal_set_x(from._internal_x());
   }
-  static_assert(sizeof(::uint32_t) == sizeof(float), "Code assumes ::uint32_t and float are the same size.");
+  static_assert(sizeof(::uint32_t) == sizeof(float),
+                "Code assumes ::uint32_t and float are the same size.");
   float tmp_y = from._internal_y();
   ::uint32_t raw_y;
   memcpy(&raw_y, &tmp_y, sizeof(tmp_y));
@@ -5110,7 +4795,7 @@ void ColorElementProto::CopyFrom(const ColorElementProto& from) {
   MergeFrom(from);
 }
 
-bool ColorElementProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool ColorElementProto::IsInitialized() const {
   return true;
 }
 
@@ -5121,7 +4806,7 @@ void ColorElementProto::InternalSwap(ColorElementProto* other) {
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.name_, lhs_arena,
                                        &other->_impl_.name_, rhs_arena);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+  ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(ColorElementProto, _impl_.y_)
       + sizeof(ColorElementProto::_impl_.y_)
       - PROTOBUF_FIELD_OFFSET(ColorElementProto, _impl_.color_)>(
@@ -5139,49 +4824,44 @@ class ColorsElementProto::_Internal {
  public:
 };
 
-ColorsElementProto::ColorsElementProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+ColorsElementProto::ColorsElementProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:ColorsElementProto)
 }
-ColorsElementProto::ColorsElementProto(const ColorsElementProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  ColorsElementProto* const _this = this; (void)_this;
+ColorsElementProto::ColorsElementProto(const ColorsElementProto& from) : ::google::protobuf::MessageLite() {
+  ColorsElementProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.value_){from._impl_.value_}
-    , /*decltype(_impl_._cached_size_)*/{}};
+      decltype(_impl_.value_){from._impl_.value_},
+      /*decltype(_impl_._cached_size_)*/ {},
+  };
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
 
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:ColorsElementProto)
 }
-
 inline void ColorsElementProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_.value_){arena}
-    , /*decltype(_impl_._cached_size_)*/{}
+      decltype(_impl_.value_){arena},
+      /*decltype(_impl_._cached_size_)*/ {},
   };
 }
-
 ColorsElementProto::~ColorsElementProto() {
   // @@protoc_insertion_point(destructor:ColorsElementProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void ColorsElementProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
-  _internal_mutable_value()->~RepeatedPtrField();
+  _impl_.value_.~RepeatedPtrField();
 }
-
 void ColorsElementProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void ColorsElementProto::Clear() {
+PROTOBUF_NOINLINE void ColorsElementProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:ColorsElementProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -5191,66 +4871,62 @@ void ColorsElementProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* ColorsElementProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // repeated .ColorElementProto value = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_value(), ptr);
-            CHK_(ptr);
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
+const char* ColorsElementProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 1, 1, 0, 2> ColorsElementProto::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    1, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967294,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    1,  // num_field_entries
+    1,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_ColorsElementProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    // repeated .ColorElementProto value = 1;
+    {::_pbi::TcParser::FastMtR1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(ColorsElementProto, _impl_.value_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // repeated .ColorElementProto value = 1;
+    {PROTOBUF_FIELD_OFFSET(ColorsElementProto, _impl_.value_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::ColorElementProto>()},
+  }}, {{
+  }},
+};
+
 ::uint8_t* ColorsElementProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ColorsElementProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // repeated .ColorElementProto value = 1;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_value_size()); i < n; i++) {
-    const auto& repfield = this->_internal_value(i);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    const auto& repfield = this->_internal_value().Get(i);
+    target = ::google::protobuf::internal::WireFormatLite::
         InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ColorsElementProto)
   return target;
@@ -5268,11 +4944,10 @@ failure:
   total_size += 1UL * this->_internal_value_size();
   for (const auto& msg : this->_internal_value()) {
     total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+      ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
   }
-
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -5280,7 +4955,7 @@ failure:
 }
 
 void ColorsElementProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const ColorsElementProto*>(
       &from));
 }
@@ -5303,14 +4978,14 @@ void ColorsElementProto::CopyFrom(const ColorsElementProto& from) {
   MergeFrom(from);
 }
 
-bool ColorsElementProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool ColorsElementProto::IsInitialized() const {
   return true;
 }
 
 void ColorsElementProto::InternalSwap(ColorsElementProto* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _internal_mutable_value()->InternalSwap(other->_internal_mutable_value());
+  _impl_.value_.InternalSwap(&other->_impl_.value_);
 }
 
 std::string ColorsElementProto::GetTypeName() const {
@@ -5330,61 +5005,55 @@ class ContainerProto::_Internal {
   }
 };
 
-const ::ColorsElementProto&
-ContainerProto::_Internal::colors(const ContainerProto* msg) {
+const ::ColorsElementProto& ContainerProto::_Internal::colors(const ContainerProto* msg) {
   return *msg->_impl_.colors_;
 }
-ContainerProto::ContainerProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite(arena) {
+ContainerProto::ContainerProto(::google::protobuf::Arena* arena)
+    : ::google::protobuf::MessageLite(arena) {
   SharedCtor(arena);
   // @@protoc_insertion_point(arena_constructor:ContainerProto)
 }
-ContainerProto::ContainerProto(const ContainerProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::MessageLite() {
-  ContainerProto* const _this = this; (void)_this;
+ContainerProto::ContainerProto(const ContainerProto& from) : ::google::protobuf::MessageLite() {
+  ContainerProto* const _this = this;
+  (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){from._impl_._has_bits_}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.cont_){from._impl_.cont_}
-    , decltype(_impl_.colors_){nullptr}};
-
-  _internal_metadata_.MergeFrom<std::string>(from._internal_metadata_);
+      decltype(_impl_._has_bits_){from._impl_._has_bits_},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.cont_){from._impl_.cont_},
+      decltype(_impl_.colors_){nullptr},
+  };
+  _internal_metadata_.MergeFrom<std::string>(
+      from._internal_metadata_);
   if ((from._impl_._has_bits_[0] & 0x00000001u) != 0) {
     _this->_impl_.colors_ = new ::ColorsElementProto(*from._impl_.colors_);
   }
+
   // @@protoc_insertion_point(copy_constructor:ContainerProto)
 }
-
 inline void ContainerProto::SharedCtor(::_pb::Arena* arena) {
   (void)arena;
   new (&_impl_) Impl_{
-      decltype(_impl_._has_bits_){}
-    , /*decltype(_impl_._cached_size_)*/{}
-    , decltype(_impl_.cont_){arena}
-    , decltype(_impl_.colors_){nullptr}
+      decltype(_impl_._has_bits_){},
+      /*decltype(_impl_._cached_size_)*/ {},
+      decltype(_impl_.cont_){arena},
+      decltype(_impl_.colors_){nullptr},
   };
 }
-
 ContainerProto::~ContainerProto() {
   // @@protoc_insertion_point(destructor:ContainerProto)
-  if (auto *arena = _internal_metadata_.DeleteReturnArena<std::string>()) {
-  (void)arena;
-    return;
-  }
+  _internal_metadata_.Delete<std::string>();
   SharedDtor();
 }
-
 inline void ContainerProto::SharedDtor() {
   ABSL_DCHECK(GetArenaForAllocation() == nullptr);
-  _internal_mutable_cont()->~RepeatedPtrField();
+  _impl_.cont_.~RepeatedPtrField();
   if (this != internal_default_instance()) delete _impl_.colors_;
 }
-
 void ContainerProto::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void ContainerProto::Clear() {
+PROTOBUF_NOINLINE void ContainerProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:ContainerProto)
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -5400,85 +5069,77 @@ void ContainerProto::Clear() {
   _internal_metadata_.Clear<std::string>();
 }
 
-const char* ContainerProto::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  _Internal::HasBits has_bits{};
-  while (!ctx->Done(&ptr)) {
-    ::uint32_t tag;
-    ptr = ::_pbi::ReadTag(ptr, &tag);
-    switch (tag >> 3) {
-      // repeated .ClassifElementProto cont = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 10)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_cont(), ptr);
-            CHK_(ptr);
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      // .ColorsElementProto colors = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::uint8_t>(tag) == 18)) {
-          ptr = ctx->ParseMessage(_internal_mutable_colors(), ptr);
-          CHK_(ptr);
-        } else {
-          goto handle_unusual;
-        }
-        continue;
-      default:
-        goto handle_unusual;
-    }  // switch
-  handle_unusual:
-    if ((tag == 0) || ((tag & 7) == 4)) {
-      CHK_(ptr);
-      ctx->SetLastTag(tag);
-      goto message_done;
-    }
-    ptr = UnknownFieldParse(
-        tag,
-        _internal_metadata_.mutable_unknown_fields<std::string>(),
-        ptr, ctx);
-    CHK_(ptr != nullptr);
-  }  // while
-message_done:
-  _impl_._has_bits_.Or(has_bits);
+const char* ContainerProto::_InternalParse(
+    const char* ptr, ::_pbi::ParseContext* ctx) {
+  ptr = ::_pbi::TcParser::ParseLoop(this, ptr, ctx, &_table_.header);
   return ptr;
-failure:
-  ptr = nullptr;
-  goto message_done;
-#undef CHK_
 }
 
+
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<1, 2, 2, 0, 2> ContainerProto::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(ContainerProto, _impl_._has_bits_),
+    0, // no _extensions_
+    2, 8,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967292,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    2,  // num_field_entries
+    2,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    &_ContainerProto_default_instance_._instance,
+    ::_pbi::TcParser::GenericFallbackLite,  // fallback
+  }, {{
+    // .ColorsElementProto colors = 2;
+    {::_pbi::TcParser::FastMtS1,
+     {18, 0, 1, PROTOBUF_FIELD_OFFSET(ContainerProto, _impl_.colors_)}},
+    // repeated .ClassifElementProto cont = 1;
+    {::_pbi::TcParser::FastMtR1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(ContainerProto, _impl_.cont_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // repeated .ClassifElementProto cont = 1;
+    {PROTOBUF_FIELD_OFFSET(ContainerProto, _impl_.cont_), -1, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
+    // .ColorsElementProto colors = 2;
+    {PROTOBUF_FIELD_OFFSET(ContainerProto, _impl_.colors_), _Internal::kHasBitsOffset + 0, 1,
+    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::ClassifElementProto>()},
+    {::_pbi::TcParser::GetTable<::ColorsElementProto>()},
+  }}, {{
+  }},
+};
+
 ::uint8_t* ContainerProto::_InternalSerialize(
-    ::uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+    ::uint8_t* target,
+    ::google::protobuf::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ContainerProto)
   ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
+  (void)cached_has_bits;
 
   // repeated .ClassifElementProto cont = 1;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_cont_size()); i < n; i++) {
-    const auto& repfield = this->_internal_cont(i);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    const auto& repfield = this->_internal_cont().Get(i);
+    target = ::google::protobuf::internal::WireFormatLite::
         InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   cached_has_bits = _impl_._has_bits_[0];
   // .ColorsElementProto colors = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+    target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessage(2, _Internal::colors(this),
         _Internal::colors(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = stream->WriteRaw(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).data(),
-        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size()), target);
+    target = stream->WriteRaw(
+        _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).data(),
+        static_cast<int>(_internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size()), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ContainerProto)
   return target;
@@ -5496,19 +5157,18 @@ failure:
   total_size += 1UL * this->_internal_cont_size();
   for (const auto& msg : this->_internal_cont()) {
     total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+      ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
   }
-
   // .ColorsElementProto colors = 2;
   cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
         *_impl_.colors_);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    total_size += _internal_metadata_.unknown_fields<std::string>(::PROTOBUF_NAMESPACE_ID::internal::GetEmptyString).size();
+    total_size += _internal_metadata_.unknown_fields<std::string>(::google::protobuf::internal::GetEmptyString).size();
   }
   int cached_size = ::_pbi::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -5516,7 +5176,7 @@ failure:
 }
 
 void ContainerProto::CheckTypeAndMergeFrom(
-    const ::PROTOBUF_NAMESPACE_ID::MessageLite& from) {
+    const ::google::protobuf::MessageLite& from) {
   MergeFrom(*::_pbi::DownCast<const ContainerProto*>(
       &from));
 }
@@ -5543,7 +5203,7 @@ void ContainerProto::CopyFrom(const ContainerProto& from) {
   MergeFrom(from);
 }
 
-bool ContainerProto::IsInitialized() const {
+PROTOBUF_NOINLINE bool ContainerProto::IsInitialized() const {
   return true;
 }
 
@@ -5551,7 +5211,7 @@ void ContainerProto::InternalSwap(ContainerProto* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
-  _internal_mutable_cont()->InternalSwap(other->_internal_mutable_cont());
+  _impl_.cont_.InternalSwap(&other->_impl_.cont_);
   swap(_impl_.colors_, other->_impl_.colors_);
 }
 
@@ -5560,71 +5220,9 @@ std::string ContainerProto::GetTypeName() const {
 }
 
 // @@protoc_insertion_point(namespace_scope)
-PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::DashDotProto*
-Arena::CreateMaybeMessage< ::DashDotProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::DashDotProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::PathSymProto*
-Arena::CreateMaybeMessage< ::PathSymProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::PathSymProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::LineRuleProto*
-Arena::CreateMaybeMessage< ::LineRuleProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::LineRuleProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::LineDefProto*
-Arena::CreateMaybeMessage< ::LineDefProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::LineDefProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::AreaRuleProto*
-Arena::CreateMaybeMessage< ::AreaRuleProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::AreaRuleProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::SymbolRuleProto*
-Arena::CreateMaybeMessage< ::SymbolRuleProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::SymbolRuleProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::CaptionDefProto*
-Arena::CreateMaybeMessage< ::CaptionDefProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CaptionDefProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::CaptionRuleProto*
-Arena::CreateMaybeMessage< ::CaptionRuleProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CaptionRuleProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::CircleRuleProto*
-Arena::CreateMaybeMessage< ::CircleRuleProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CircleRuleProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::PathTextRuleProto*
-Arena::CreateMaybeMessage< ::PathTextRuleProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::PathTextRuleProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::ShieldRuleProto*
-Arena::CreateMaybeMessage< ::ShieldRuleProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ShieldRuleProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::DrawElementProto*
-Arena::CreateMaybeMessage< ::DrawElementProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::DrawElementProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::ClassifElementProto*
-Arena::CreateMaybeMessage< ::ClassifElementProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ClassifElementProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::ColorElementProto*
-Arena::CreateMaybeMessage< ::ColorElementProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ColorElementProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::ColorsElementProto*
-Arena::CreateMaybeMessage< ::ColorsElementProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ColorsElementProto >(arena);
-}
-template<> PROTOBUF_NOINLINE ::ContainerProto*
-Arena::CreateMaybeMessage< ::ContainerProto >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ContainerProto >(arena);
-}
-PROTOBUF_NAMESPACE_CLOSE
+namespace google {
+namespace protobuf {
+}  // namespace protobuf
+}  // namespace google
 // @@protoc_insertion_point(global_scope)
 #include "google/protobuf/port_undef.inc"
