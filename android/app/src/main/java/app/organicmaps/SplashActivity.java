@@ -156,9 +156,9 @@ public class SplashActivity extends AppCompatActivity
         (ActivityCompat.checkSelfPermission(this, ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED ||
          ActivityCompat.checkSelfPermission(this, ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED))
     {
-      LocationHelper.INSTANCE.onEnteredIntoFirstRun();
-      if (!LocationHelper.INSTANCE.isActive())
-        LocationHelper.INSTANCE.start();
+      LocationHelper.from(this).onEnteredIntoFirstRun();
+      if (!LocationHelper.from(this).isActive())
+        LocationHelper.from(this).start();
     }
 
     if (!asyncContinue)
