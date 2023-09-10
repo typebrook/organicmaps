@@ -18,8 +18,6 @@
 		164891E12A683893001BC240 /* arena_align.h in Sources */ = {isa = PBXBuildFile; fileRef = 16487DCC2A6826F5001BC240 /* arena_align.h */; };
 		164891E22A683893001BC240 /* arena_allocation_policy.h in Sources */ = {isa = PBXBuildFile; fileRef = 16487F4E2A6826F8001BC240 /* arena_allocation_policy.h */; };
 		164891E32A683893001BC240 /* arena_cleanup.h in Sources */ = {isa = PBXBuildFile; fileRef = 16487DDE2A6826F6001BC240 /* arena_cleanup.h */; };
-		164891E42A683893001BC240 /* arena_config.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16487D702A6826F4001BC240 /* arena_config.cc */; };
-		164891E52A683893001BC240 /* arena_config.h in Sources */ = {isa = PBXBuildFile; fileRef = 16487F2B2A6826F7001BC240 /* arena_config.h */; };
 		164891E62A683893001BC240 /* arena.h in Sources */ = {isa = PBXBuildFile; fileRef = 16487F182A6826F7001BC240 /* arena.h */; };
 		164891E72A683893001BC240 /* arenastring.h in Sources */ = {isa = PBXBuildFile; fileRef = 16487DBD2A6826F5001BC240 /* arenastring.h */; };
 		164891E82A683893001BC240 /* arenaz_sampler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16487F5E2A6826F9001BC240 /* arenaz_sampler.cc */; };
@@ -100,7 +98,6 @@
 		1648D4582A68429C001BC240 /* arena_align.h in Headers */ = {isa = PBXBuildFile; fileRef = 16487DCC2A6826F5001BC240 /* arena_align.h */; };
 		1648D4592A68429C001BC240 /* arena_allocation_policy.h in Headers */ = {isa = PBXBuildFile; fileRef = 16487F4E2A6826F8001BC240 /* arena_allocation_policy.h */; };
 		1648D45A2A68429C001BC240 /* arena_cleanup.h in Headers */ = {isa = PBXBuildFile; fileRef = 16487DDE2A6826F6001BC240 /* arena_cleanup.h */; };
-		1648D45B2A68429C001BC240 /* arena_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 16487F2B2A6826F7001BC240 /* arena_config.h */; };
 		1648D45C2A68429C001BC240 /* arena.h in Headers */ = {isa = PBXBuildFile; fileRef = 16487F182A6826F7001BC240 /* arena.h */; };
 		1648D45D2A68429C001BC240 /* arenastring.h in Headers */ = {isa = PBXBuildFile; fileRef = 16487DBD2A6826F5001BC240 /* arenastring.h */; };
 		1648D45E2A68429C001BC240 /* arenaz_sampler.h in Headers */ = {isa = PBXBuildFile; fileRef = 16487F0B2A6826F6001BC240 /* arenaz_sampler.h */; };
@@ -620,7 +617,6 @@
 		16487D6C2A6826F4001BC240 /* map_type_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map_type_handler.h; path = protobuf/src/google/protobuf/map_type_handler.h; sourceTree = "<group>"; };
 		16487D6E2A6826F4001BC240 /* serial_arena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = serial_arena.h; path = protobuf/src/google/protobuf/serial_arena.h; sourceTree = "<group>"; };
 		16487D6F2A6826F4001BC240 /* implicit_weak_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = implicit_weak_message.h; path = protobuf/src/google/protobuf/implicit_weak_message.h; sourceTree = "<group>"; };
-		16487D702A6826F4001BC240 /* arena_config.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = arena_config.cc; path = protobuf/src/google/protobuf/arena_config.cc; sourceTree = "<group>"; };
 		16487D752A6826F4001BC240 /* dynamic_message.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dynamic_message.cc; path = protobuf/src/google/protobuf/dynamic_message.cc; sourceTree = "<group>"; };
 		16487D782A6826F4001BC240 /* port.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = port.cc; path = protobuf/src/google/protobuf/port.cc; sourceTree = "<group>"; };
 		16487D7C2A6826F4001BC240 /* descriptor_database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = descriptor_database.h; path = protobuf/src/google/protobuf/descriptor_database.h; sourceTree = "<group>"; };
@@ -646,7 +642,6 @@
 		16487F182A6826F7001BC240 /* arena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = arena.h; path = protobuf/src/google/protobuf/arena.h; sourceTree = "<group>"; };
 		16487F202A6826F7001BC240 /* message_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = message_lite.h; path = protobuf/src/google/protobuf/message_lite.h; sourceTree = "<group>"; };
 		16487F242A6826F7001BC240 /* extension_set_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = extension_set_inl.h; path = protobuf/src/google/protobuf/extension_set_inl.h; sourceTree = "<group>"; };
-		16487F2B2A6826F7001BC240 /* arena_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = arena_config.h; path = protobuf/src/google/protobuf/arena_config.h; sourceTree = "<group>"; };
 		16487F2C2A6826F7001BC240 /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map.h; path = protobuf/src/google/protobuf/map.h; sourceTree = "<group>"; };
 		16487F362A6826F8001BC240 /* varint_shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = varint_shuffle.h; path = protobuf/src/google/protobuf/varint_shuffle.h; sourceTree = "<group>"; };
 		16487F392A6826F8001BC240 /* descriptor_database.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = descriptor_database.cc; path = protobuf/src/google/protobuf/descriptor_database.cc; sourceTree = "<group>"; };
@@ -2215,8 +2210,6 @@
 				16487DCC2A6826F5001BC240 /* arena_align.h */,
 				16487F4E2A6826F8001BC240 /* arena_allocation_policy.h */,
 				16487DDE2A6826F6001BC240 /* arena_cleanup.h */,
-				16487D702A6826F4001BC240 /* arena_config.cc */,
-				16487F2B2A6826F7001BC240 /* arena_config.h */,
 				16487F182A6826F7001BC240 /* arena.h */,
 				16487DBD2A6826F5001BC240 /* arenastring.h */,
 				16487F5E2A6826F9001BC240 /* arenaz_sampler.cc */,
@@ -2307,7 +2300,6 @@
 				1648D4582A68429C001BC240 /* arena_align.h in Headers */,
 				1648D4592A68429C001BC240 /* arena_allocation_policy.h in Headers */,
 				1648D45A2A68429C001BC240 /* arena_cleanup.h in Headers */,
-				1648D45B2A68429C001BC240 /* arena_config.h in Headers */,
 				1648D45C2A68429C001BC240 /* arena.h in Headers */,
 				1648D45D2A68429C001BC240 /* arenastring.h in Headers */,
 				1648D45E2A68429C001BC240 /* arenaz_sampler.h in Headers */,
@@ -2927,8 +2919,6 @@
 				164891E12A683893001BC240 /* arena_align.h in Sources */,
 				164891E22A683893001BC240 /* arena_allocation_policy.h in Sources */,
 				164891E32A683893001BC240 /* arena_cleanup.h in Sources */,
-				164891E42A683893001BC240 /* arena_config.cc in Sources */,
-				164891E52A683893001BC240 /* arena_config.h in Sources */,
 				164891E62A683893001BC240 /* arena.h in Sources */,
 				164891E72A683893001BC240 /* arenastring.h in Sources */,
 				164891E82A683893001BC240 /* arenaz_sampler.cc in Sources */,
