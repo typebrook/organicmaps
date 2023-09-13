@@ -8,6 +8,9 @@
 
 #include <limits>
 
+//#define BOOST_STACKTRACE_GNU_SOURCE_NOT_REQUIRED
+#include <boost/stacktrace.hpp>
+
 namespace feature
 {
 /// @returns point on a feature that is the closest to f.GetLimitRect().Center().
@@ -22,10 +25,13 @@ m2::PointD GetCenter(FeatureType & f, int scale)
   {
     return f.GetCenter();
   }
+  /// @todo cache calculated area and line centers, as calculation could be quite heavy for big features (and
+  /// involves geometry reading) and a center could be requested multiple times during e.g. search, PP opening, etc.
   case GeomType::Line:
   {
     m2::CalculatePolyLineCenter doCalc;
     f.ForEachPoint(doCalc, scale);
+    //LOG(LINFO, ("Calc LINE center:", f.GetID(), f.DebugString(scale, true), scale));
     return doCalc.GetResult();
   }
   default:
@@ -33,6 +39,15 @@ m2::PointD GetCenter(FeatureType & f, int scale)
     ASSERT_EQUAL(type, GeomType::Area, ());
     m2::CalculatePointOnSurface doCalc(f.GetLimitRect(scale));
     f.ForEachTriangle(doCalc, scale);
+    /*
+    if (f.GetID().m_index == 289598)
+    {
+      FeatureType * fptr = &f;
+      LOG(LINFO, ("Calc AREA center:", f.GetID(), f.DebugString(scale, true), scale, fptr));
+      //LOG(LINFO, (boost::stacktrace::stacktrace()));
+      //std::cerr << boost::stacktrace::stacktrace();
+    }
+    */
     return doCalc.GetResult();
   }
   }

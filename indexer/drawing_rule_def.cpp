@@ -53,4 +53,25 @@ void MakeUnique(KeysT & keys)
   sort(keys.begin(), keys.end(), less_key());
   keys.resize(distance(keys.begin(), unique(keys.begin(), keys.end(), equal_key())));
 }
+
+double CalcAreaBySizeDepth(FeatureType & f)
+{
+  // Calculate depth based on areas' bbox sizes instead of style-set priorities.
+  m2::RectD const r = f.GetLimitRectChecked();
+  // Raw areas' size range is about (1e-11, 3000).
+  double const areaSize = r.SizeX() * r.SizeY();
+  // Use log2() to have more precision distinguishing smaller areas.
+  double const areaSizeCompact = std::log2(areaSize);
+  // Compacted range is approx (-37;13).
+  double constexpr minSize = -37,
+                   maxSize = 13,
+                   stretchFactor = kDepthRangeBgBySize / (maxSize - minSize);
+  // Adjust the range to fit into [kBaseDepthBgBySize;kBaseDepthBgTop).
+  double const areaDepth = kBaseDepthBgBySize + (maxSize - areaSizeCompact) * stretchFactor;
+  ASSERT(kBaseDepthBgBySize <= areaDepth && areaDepth < kBaseDepthBgTop,
+         (areaDepth, areaSize, areaSizeCompact, f.GetID()));
+
+  return areaDepth;
+}
+
 }

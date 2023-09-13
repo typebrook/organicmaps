@@ -238,7 +238,7 @@ namespace
         //{ line, area, symbol, caption, circle, pathtext, waymarker, shield }
         { 0, 0, 1, 1, 1, 0, 0, 0 },   // fpoint
         { 1, 0, 0, 0, 0, 1, 0, 1 },   // fline
-        { 1, 1, 1, 1, 1, 0, 0, 0 }    // farea
+        { 0, 1, 1, 1, 1, 0, 0, 0 }    // farea
       };
 
       if (visible[ft][i->m_type] == 1)
