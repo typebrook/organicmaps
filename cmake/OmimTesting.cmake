@@ -1,5 +1,8 @@
 include(OmimConfig)
 
+# Enables ctest -T memcheck with valgrind
+include(CTest)
+
 # TestServer fixture configuration
 add_test(
   NAME OmimStartTestServer
