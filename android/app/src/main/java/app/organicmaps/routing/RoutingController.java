@@ -18,7 +18,6 @@ import app.organicmaps.bookmarks.data.FeatureId;
 import app.organicmaps.bookmarks.data.MapObject;
 import app.organicmaps.location.LocationHelper;
 import app.organicmaps.widget.placepage.CoordinatesFormat;
-import app.organicmaps.util.Config;
 import app.organicmaps.util.StringUtils;
 import app.organicmaps.util.Utils;
 import app.organicmaps.util.concurrency.UiThread;
@@ -67,8 +66,6 @@ public class RoutingController implements Initializable<Void>
     default boolean isSubwayEnabled() { return false; }
     default void onCommonBuildError(int lastResultCode, @NonNull String[] lastMissingMaps) {}
     default void onDrivingOptionsBuildError() {}
-    default void onShowDisclaimer(@Nullable MapObject startPoint, @Nullable MapObject endPoint) {}
-    default void onSuggestRebuildRoute() {}
 
     /**
      * @param progress progress to be displayed.
@@ -229,7 +226,8 @@ public class RoutingController implements Initializable<Void>
     Logger.d(TAG, "[B] State: " + mState + ", BuildState: " + mBuildState + " -> " + newState);
     mBuildState = newState;
 
-    if (mBuildState == BuildState.BUILT && !MapObject.isOfType(MapObject.MY_POSITION, getStartPoint()))
+    final MapObject startPoint = getStartPoint();
+    if (mBuildState == BuildState.BUILT && (startPoint == null || !startPoint.isMyPosition()))
       Framework.nativeDisableFollowing();
 
     if (mContainer != null)
@@ -361,14 +359,6 @@ public class RoutingController implements Initializable<Void>
   public void prepare(@Nullable MapObject startPoint, @Nullable MapObject endPoint, boolean fromApi)
   {
     Logger.d(TAG, "prepare (" + (endPoint == null ? "route)" : "p2p)"));
-
-    if (!Config.isRoutingDisclaimerAccepted())
-    {
-      if (mContainer != null)
-        mContainer.onShowDisclaimer(startPoint, endPoint);
-      return;
-    }
-
     initLastRouteType(startPoint, endPoint, fromApi);
     prepare(startPoint, endPoint, mLastRouterType);
   }
@@ -414,15 +404,6 @@ public class RoutingController implements Initializable<Void>
     // This saving is needed just for situation when the user starts navigation
     // and then app crashes. So, the previous route will be restored on the next app launch.
     saveRoute();
-
-    MapObject my = LocationHelper.INSTANCE.getMyPosition();
-
-    if (my == null || !MapObject.isOfType(MapObject.MY_POSITION, getStartPoint()))
-    {
-      if (mContainer != null)
-        mContainer.onSuggestRebuildRoute();
-      return;
-    }
 
     setState(State.NAVIGATION);
 
@@ -681,16 +662,6 @@ public class RoutingController implements Initializable<Void>
     return null;
   }
 
-  public boolean hasStartPoint()
-  {
-    return getStartPoint() != null;
-  }
-
-  public boolean hasEndPoint()
-  {
-    return getEndPoint() != null;
-  }
-
   @Nullable
   public RoutingInfo getCachedRoutingInfo()
   {
@@ -729,20 +700,6 @@ public class RoutingController implements Initializable<Void>
 
     if (getStartPoint() != null && getEndPoint() != null)
       build();
-  }
-
-  public boolean setStartFromMyPosition()
-  {
-    Logger.d(TAG, "setStartFromMyPosition");
-
-    MapObject my = LocationHelper.INSTANCE.getMyPosition();
-    if (my == null)
-    {
-      Logger.d(TAG, "setStartFromMyPosition: no my position - skip");
-      return false;
-    }
-
-    return setStartPoint(my);
   }
 
   /**
@@ -840,7 +797,7 @@ public class RoutingController implements Initializable<Void>
     Pair<String, String> description = getDescriptionForPoint(point);
     Framework.nativeAddRoutePoint(description.first /* title */, description.second /* subtitle */,
                                   type, 0 /* intermediateIndex */,
-                                  MapObject.isOfType(MapObject.MY_POSITION, point),
+                                  point.isMyPosition(),
                                   point.getLat(), point.getLon());
   }
 
@@ -903,12 +860,6 @@ public class RoutingController implements Initializable<Void>
 
     if (getStartPoint() != null && getEndPoint() != null)
       build();
-  }
-
-  @Framework.RouterType
-  public int getLastRouterType()
-  {
-    return mLastRouterType;
   }
 
   private void cancelRemovingIntermediatePointsTransaction()
